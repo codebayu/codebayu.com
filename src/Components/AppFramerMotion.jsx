@@ -18,8 +18,8 @@ export default function FramerMotion() {
         animation={animation}
         padding="2"
         bgGradient="linear(to-l, #ffd600, #FF0080)"
-        width="5"
-        height="5"
+        width="4"
+        height="4"
         display="flex"
       />
   );

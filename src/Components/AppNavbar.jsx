@@ -1,31 +1,25 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import {
-  Flex,
-  Center,
-  Menu,
-  Text,
-  HStack,
-  Container,
-  IconButton,
-  Heading,
-} from "@chakra-ui/react";
-import {
-  FaTwitter,
-  FaDiscord,
-  FaYoutube,
-  FaGithub,
-  FaEthereum,
-} from "react-icons/fa";
+import { Link } from "react-scroll";
+import { Flex, Center, Menu, Text, HStack } from "@chakra-ui/react";
+import AppFramerMotion from "./AppFramerMotion";
 
-const AppNavbar = () => {
+export const AppNavbar = () => {
   return (
-    <Flex justify="center">
-      <Flex bg="#7c4dff">
-        halo
-      </Flex>
-    </Flex>
+    <HStack
+      justify="space-around"
+      pos="fixed"
+      left={0}
+      right={0}
+      top={0}
+      bg="black"
+      shadow="dark-lg"
+      zIndex={10}
+    >
+      <AppFramerMotion/>
+      <HStack fontWeight="bold" color="white" p={5} spacing={{base:"5", lg:"10"}}>
+        <Link to="home" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }}>Home</Text></Link>
+        <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }}>Experience</Text></Link>
+        <Link to="mystack" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }}>My Stack</Text></Link>
+      </HStack>
+    </HStack>
   );
 };
-
-export default AppNavbar;
