@@ -28,10 +28,11 @@ function App() {
     <Box>
       <Box
         as="section"
-        height={{ base: "80vh", lg: "100vh" }}
+        height={{ base: "100%", lg: "100vh" }}
         overflowY="auto"
         bg="black"
         color="white"
+        py="5rem"
         px={{ base: "1rem", lg: "10rem" }}
         id="home"
       >
@@ -70,39 +71,43 @@ function App() {
             />
             <AppIcon
               icon={<FaWhatsapp />}
-              link="https://wa.me/082385696549"
+              link="https://wa.me/+6282385696549"
               label="Whatsapp"
             />
           </HStack>
-          <HStack>
+          <HStack
+            spacing={{ base: "0", lg: "5" }}
+            flexDir={{ base: "column-reverse", lg: "row" }}
+          >
             <Button
               bg="#ffd600"
               color="black"
               rounded="lg"
+              mt={{ base: "1rem", lg: "0" }}
               px="3rem"
               py="1.5rem"
               fontWeight="bold"
-              _hover={{bg:"#2b2b2b", color:"#ffd600"}}
+              _hover={{ bg: "yellow", color: "black" }}
               onClick={() => {
                 navigate(window.open(" https://docs.code-bayu.com/"));
               }}
             >
               See My Documentation
             </Button>
-            {/* <Button
+            <Button
               bg="#2b2b2b"
               color="#ffd600"
               rounded="lg"
               px="3rem"
               py="1.5rem"
               fontWeight="bold"
-              _hover={{bg:"#ffd600", color:"#2b2b2b"}}
+              _hover={{ bg: "gray.800", color: "white" }}
               onClick={() => {
-                navigate(window.open(" https://docs.code-bayu.com/"));
+                navigate(window.open("./CV-Bayu-Setiawan.pdf"));
               }}
             >
               Download My CV
-            </Button> */}
+            </Button>
           </HStack>
         </Stack>
       </Box>
@@ -123,14 +128,16 @@ function App() {
           Experience
         </Heading>
         <SimpleGrid columns={[1, null, 3]} spacing="40px">
-          <AppCard src="./ipb.png" label="2017 - 2022 as Student" />
+          <AppCard src="./ipb.png" label="Student" date="2017 - 2022" />
           <AppCard
             src="./importir.png"
-            label="February - April 2022 as IT MT"
+            label="IT Management Trainee"
+            date="February - April 2022"
           />
           <AppCard
             src="./importir.png"
-            label="April - Now as Frontend Developer"
+            label="Frontend Developer"
+            date="April 2022 - Now"
           />
         </SimpleGrid>
       </Stack>

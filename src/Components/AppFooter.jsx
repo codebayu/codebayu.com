@@ -1,14 +1,5 @@
-import { Box, HStack, Container, Link, Stack, Text } from "@chakra-ui/react";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaWhatsapp,
-  FaEnvelope,
-  FaReact,
-} from "react-icons/fa";
+import {Stack, Text } from "@chakra-ui/react";
 import AppFramerMotion from "./AppFramerMotion";
-import { AppIcon } from "./AppIcon";
 
 export const AppFooter = () => {
   return (
@@ -24,7 +15,7 @@ export const AppFooter = () => {
       py="2rem"
     >
       <AppFramerMotion/>
-      <Text>CopyRight © 2022 Bayu All Rights Reserved</Text>
+      <Text>CopyRight © 2022 Bayu Setiawan All Rights Reserved</Text>
     </Stack>
   );
 };

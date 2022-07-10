@@ -1,4 +1,4 @@
-import { Box, Container, keyframes } from "@chakra-ui/react";
+import { Box, keyframes } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const animationKeyframes = keyframes`

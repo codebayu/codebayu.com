@@ -1,31 +1,30 @@
-import { Stack, Tooltip, Image } from "@chakra-ui/react";
+import { Stack, Image, Text, Box, Flex, Divider } from "@chakra-ui/react";
 
 export const AppCard = (props) => {
-  const { label, src } = props;
+  const { label, src, date } = props;
   return (
-    <Tooltip
-      hasArrow
-      label={label}
-      placement="bottom"
-      textAlign="center"
-      p={2}
-      mt={{ base: "0", lg: "3" }}
-      rounded="lg"
-      bg="gray.800"
-      color="#ffd600"
-    >
       <Stack
-        justify="center"
-        h="10rem"
+        justify="space-around"
+        h="100%"
         bg="gray.800"
         rounded="xl"
         py={3}
         px={10}
         shadow="dark-lg"
-        _hover={{transform: "translateY(-3px)"}}
+        _hover={{ transform: "translateY(-3px)", bg:"black" }}
       >
-        <Image maxW="10rem" src={src} />
+        <Flex align="center" justify="center">
+          <Image maxW="10rem" src={src} />
+        </Flex>
+        <Divider/>
+        <Box>
+          <Text color="#ffd600" textAlign="center" fontWeight="bold">
+            {label}
+          </Text>
+          <Text color="gray.300" textAlign="center">
+            {date}
+          </Text>
+        </Box>
       </Stack>
-    </Tooltip>
   );
 };
