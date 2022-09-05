@@ -162,7 +162,7 @@ function App() {
         ))}
         
       </Stack>
-      <Stack
+      {/* <Stack
         as="section"
         align="center"
         minHeight="100vh"
@@ -179,7 +179,7 @@ function App() {
           My Project
         </Heading>
         
-      </Stack>
+      </Stack> */}
       <Stack
         as="section"
         align="center"

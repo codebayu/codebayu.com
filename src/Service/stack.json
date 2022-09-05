@@ -40,13 +40,23 @@
         "labelColor" : "#7709f6"
     },
     {
+        "logo" : "./javascript.png",
+        "label" : "JavaScript",
+        "labelColor" : "#000"
+    },
+    {
+        "logo" : "./typescript.png",
+        "label" : "TypeScript",
+        "labelColor" : "#2E78C7"
+    },
+    {
         "logo" : "./html.png",
-        "label" : "HTML",
+        "label" : "HTML5",
         "labelColor" : "#fc490b"
     },
     {
         "logo" : "./css.png",
-        "label" : "CSS",
+        "label" : "CSS3",
         "labelColor" : "#214ce5"
     }
     
