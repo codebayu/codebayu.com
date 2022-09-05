@@ -7,6 +7,10 @@ import {
   SimpleGrid,
   Heading,
   Stack,
+  Image,
+  Flex,
+  UnorderedList,
+  ListItem,
 } from "@chakra-ui/react";
 import {
   FaGithub,
@@ -17,10 +21,11 @@ import {
 } from "react-icons/fa";
 import { AppNavbar } from "./Components/AppNavbar";
 import { AppIcon } from "./Components/AppIcon";
-import { AppCard } from "./Components/AppCard";
 import { AppStack } from "./Components/AppStack";
 import { AppFooter } from "./Components/AppFooter";
 import { useNavigate } from "react-router-dom";
+import experience from "./Service/experience.json"
+import stacks from "./Service/stack.json"
 
 function App() {
   const navigate = useNavigate();
@@ -73,7 +78,7 @@ function App() {
               icon={<FaWhatsapp />}
               link="https://wa.me/+6282385696549"
               label="Whatsapp"
-            />
+            /> 
           </HStack>
           <HStack
             spacing={{ base: "0", lg: "5" }}
@@ -114,9 +119,9 @@ function App() {
       <Stack
         as="section"
         align="center"
-        height="100%"
+        minHeight="100vh"
         overflowY="auto"
-        bg="#ffd600"
+        bg="#fff"
         color="black"
         spacing={5}
         px={{ base: "1rem", lg: "10rem" }}
@@ -127,24 +132,58 @@ function App() {
         <Heading size="xl" fontWeight="bold" mb={8}>
           Experience
         </Heading>
-        <SimpleGrid columns={[1, null, 3]} spacing="40px">
-          <AppCard src="./ipb.png" label="Student" date="2017 - 2022" />
-          <AppCard
-            src="./importir.png"
-            label="IT Management Trainee"
-            date="February - April 2022"
-          />
-          <AppCard
-            src="./importir.png"
-            label="Frontend Developer"
-            date="April 2022 - Now"
-          />
-        </SimpleGrid>
+        {experience.map((item, index) => (
+          <Flex key={index} flexDir={{base: "column", lg: "row"}} width="100%" py={10} alignItems="center" textAlign={{base: "center", lg:"start"}}>
+            <Box paddingX={10} height={{base:"100%", lg:"100px"}} minWidth={{base:"100%", lg:"50%"}} mb={{base: 5, lg: 0}}>
+              <Image src={item.image} alt="project preview" width="100%" height="100%"/>
+            </Box>
+            <Stack spacing={5}>
+              <Heading>{item.position}</Heading>
+              <HStack justifyContent={{base: "center", lg:"start"}}>
+                <Heading size="sm">{item.company} |</Heading>
+                <Text>{item.periods}</Text>
+              </HStack>
+              <Stack spacing={1}>
+                <Heading size="sm">Technology Used</Heading>
+                <Text>{item.technology_used}</Text>
+              </Stack>
+              <Stack spacing={1}>
+                <Heading size="sm">Project ({item.project_note})</Heading>
+               
+                <UnorderedList paddingLeft={5}>
+                {item.projects?.map((project, index) => (
+                   <ListItem key={index}>{project}</ListItem>
+                ))}
+                </UnorderedList>
+                
+              </Stack>
+            </Stack>
+          </Flex>
+        ))}
+        
       </Stack>
       <Stack
         as="section"
         align="center"
-        height="100%"
+        minHeight="100vh"
+        overflowY="auto"
+        bg="#ffd600"
+        color="black"
+        spacing={5}
+        px={{ base: "1rem", lg: "10rem" }}
+        pt="2rem"
+        pb="6rem"
+        id="myproject"
+      >
+        <Heading size="lg" fontWeight="bold" mb={8}>
+          My Project
+        </Heading>
+        
+      </Stack>
+      <Stack
+        as="section"
+        align="center"
+        height="100vh"
         justify="center"
         overflowY="auto"
         bg="black"
@@ -158,14 +197,10 @@ function App() {
         <Heading size="lg" fontWeight="bold" mb={8}>
           My Stack
         </Heading>
-        <SimpleGrid columns={[3, null, 7]} spacing="40px">
-          <AppStack src="./logo512.png" label="React Js" bg="#61dafb" />
-          <AppStack src="./redux.png" label="Redux" bg="#764abc" />
-          <AppStack src="./firebase.svg" label="Firebase" bg="#fcca3f" />
-          <AppStack src="./chakra.png" label="Chakra UI" bg="#45c6c0" />
-          <AppStack src="./bootstrap.png" label="Bootstrap" bg="#7709f6" />
-          <AppStack src="./html.png" label="HTML" bg="#fc490b" />
-          <AppStack src="./css.png" label="CSS" bg="#214ce5" />
+        <SimpleGrid columns={[2, null, 6]} spacing="40px">
+          {stacks.map((stack, index) => (
+             <AppStack key={index} src={stack.logo} label={stack.label} labelColor={stack.labelColor} />
+          ))}
         </SimpleGrid>
       </Stack>
       <AppFooter />

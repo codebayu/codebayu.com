@@ -15,9 +15,10 @@ export const AppNavbar = () => {
       zIndex={10}
     >
       <AppFramerMotion/>
-      <HStack fontWeight="bold" color="white" p={5} spacing={{base:"5", lg:"10"}}>
+      <HStack fontWeight="bold" fontSize={{base: 12, lg: 16}} color="white" p={5} spacing={{base:"5", lg:"10"}}>
         <Link to="home" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }} cursor="pointer">Home</Text></Link>
         <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }} cursor="pointer">Experience</Text></Link>
+        <Link to="myproject" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }} cursor="pointer">My Project</Text></Link>
         <Link to="mystack" spy={true} smooth={true} offset={-50} duration={500}><Text _hover={{ color: "#ffd600" }} cursor="pointer">My Stack</Text></Link>
       </HStack>
     </HStack>

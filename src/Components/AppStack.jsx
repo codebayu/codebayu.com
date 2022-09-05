@@ -1,20 +1,12 @@
-import {Tooltip, Image } from "@chakra-ui/react";
+import { Image, Heading, Flex } from "@chakra-ui/react";
 
 export const AppStack = (props) => {
-  const { label, src, bg } = props;
+  const { label, src, labelColor } = props;
   return (
-    <Tooltip
-      hasArrow
-      label={label}
-      placement="bottom"
-      textAlign="center"
-      p={1}
-      mt={2}
-      rounded="md"
-      bg={bg}
-      color="on-accent"
-    >
-      <Image maxH="5rem" src={src} />
-    </Tooltip>
+    <Flex flexDir="column" textAlign="center" alignItems="center" justifyContent="space-between" bg="white" p={3} rounded="lg">
+      <Image height="2rem" src={src} alt={label}/>
+      <Heading size="md" color={labelColor} mt={3}>{label}</Heading>
+    </Flex>
+      
   );
 };

@@ -1,0 +1,53 @@
+[
+    {
+        "logo" : "logo512.png",
+        "label" : "React Js",
+        "labelColor" : "#61dafb"
+    },
+    {
+        "logo" : "./Nextjs-logo.svg",
+        "label" : "Next Js",
+        "labelColor" : "#000"
+    },
+    {
+        "logo" : "./ExpressJS.png",
+        "label" : "Express Js",
+        "labelColor" : "#000"
+    },
+    {
+        "logo" : "./redux.png",
+        "label" : "Redux",
+        "labelColor" : "#764abc"
+    },
+    {
+        "logo" : "./firebase.svg",
+        "label" : "Firebase",
+        "labelColor" : "#fcca3f"
+    },
+    {
+        "logo" : "./chakra.png",
+        "label" : "Chakra UI",
+        "labelColor" : "#45c6c0"
+    },
+    {
+        "logo" : "./logo-mui.png",
+        "label" : "Material UI",
+        "labelColor" : "#027FFF"
+    },
+    {
+        "logo" : "./bootstrap.png",
+        "label" : "Bootstrap",
+        "labelColor" : "#7709f6"
+    },
+    {
+        "logo" : "./html.png",
+        "label" : "HTML",
+        "labelColor" : "#fc490b"
+    },
+    {
+        "logo" : "./css.png",
+        "label" : "CSS",
+        "labelColor" : "#214ce5"
+    }
+    
+]
