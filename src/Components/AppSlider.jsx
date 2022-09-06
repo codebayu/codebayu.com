@@ -15,11 +15,11 @@ export default function AppSlider({image}) {
         autoplaySpeed: 2000
       };
   return (
-    <Box width={{base:"20rem", lg:"35rem"}} height="100%" bg="white" alignItems="center" rounded="xl">
+    <Box width={{base:"20rem", lg:"35rem"}} height="100%" bg="white" alignItems="center" rounded="xl" paddingX={{base:"0.5rem", lg:"2rem"}}>
         <Slider {...settings}>
             {image.map((item, index) => (
                 <Box key={index} padding={5} height={{base:"9rem", lg:"16rem"}} objectFit="cover" rounded="xl">
-                    <Image src={item}/>
+                    <Image src={item} alt={item} w="100%" h="100%"/>
                  </Box>
             ))}
         </Slider>

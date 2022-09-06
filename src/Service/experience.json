@@ -6,7 +6,7 @@
         "technology_used": "Next Js, React Js, Material UI, Atomic Design, Typescript",
         "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
         "project_note": "Frontend and Backend Integration",
-        "image": "./logo_Alteacare.svg"
+        "image": "./logo/logo_Alteacare.svg"
     },
     {
         "position" : "Frontend Developer",
@@ -15,7 +15,7 @@
         "technology_used": "React Js, Firebase Deployment, Firestore, Cloud Storage, MySQL, Chakra  UI",
         "projects": ["Academy (Learning Management System)", "Smart Wizard (Web3/ Blockchain Network)", "Projeq.id (Website for integrating application from finance, accounting, human resourse, and general affair"],
         "project_note": "Frontend, UI/UX Designer,  and Backend Integration",
-        "image": "./importir.png"
+        "image": "./logo/importir.webp"
     },
     {
         "position" : "IT Management Trainee",
@@ -23,6 +23,6 @@
         "company": "importir.org",
         "technology_used": "React Js, Chakra  UI, Bootstrap, Firebase Deployment ",
         "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
-        "image": "./importir.png"
+        "image": "./logo/importir.webp"
     }
 ]
