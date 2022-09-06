@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Entrepreneurs Academy",
+        "description": "Entrepreneurs Academy is Iearning Management System (LMS) website built on an Api-to-Api system on the appgregator.co and edutama.id platform.",
+        "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore,  Firebase Authentication, and Backend integration using Axios",
+        "repository": "Importir.org (Office) Repository",
+        "preview_image": [
+            "./project/academy/home.png",
+            "./project/academy/academydetail.png",
+            "./project/academy/crudacademy.png",
+            "./project/academy/crudpackage.png",
+            "./project/academy/auth.png",
+            "./project/academy/integratexendit.png",
+            "./project/academy/myacademy.png"
+        ]
+    },
+    {
+        "title": "Smart Wizard",
+        "description": "Smart Wizard is a blockchain-based website created to help NFT creators to deploy smart contracts on blockchain network automatically without coding        ",
+        "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore, Ethers, Solidity, Express JS and Backend integration using Axios",
+        "repository": "Importir.org (Office) Repository",
+        "preview_image": [
+            "./project/smartwizard/1.png",
+            "./project/smartwizard/2.png",
+            "./project/smartwizard/3.png",
+            "./project/smartwizard/4.png",
+            "./project/smartwizard/5.png"
+        ]
+    }
+]

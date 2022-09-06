@@ -1,11 +1,12 @@
 [
     {
-        "position" : "IT Management Trainee",
-        "periods": "February - April 2022",
-        "company": "importir.org",
-        "technology_used": "React Js, Chakra  UI, Bootstrap, Firebase Deployment ",
-        "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
-        "image": "./importir.png"
+        "position" : "Frontend Developer",
+        "periods": "August 2022 - Now",
+        "company": "AlteaCare",
+        "technology_used": "Next Js, React Js, Material UI, Atomic Design, Typescript",
+        "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
+        "project_note": "Frontend and Backend Integration",
+        "image": "./logo_Alteacare.svg"
     },
     {
         "position" : "Frontend Developer",
@@ -17,12 +18,11 @@
         "image": "./importir.png"
     },
     {
-        "position" : "Frontend Developer",
-        "periods": "August - Now",
-        "company": "AlteaCare",
-        "technology_used": "Next Js, React Js, Material UI, Atomic Design, Typescript",
-        "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
-        "project_note": "Frontend and Backend Integration",
-        "image": "./logo_Alteacare.svg"
+        "position" : "IT Management Trainee",
+        "periods": "February - April 2022",
+        "company": "importir.org",
+        "technology_used": "React Js, Chakra  UI, Bootstrap, Firebase Deployment ",
+        "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
+        "image": "./importir.png"
     }
 ]

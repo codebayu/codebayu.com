@@ -26,6 +26,10 @@ import { AppFooter } from "./Components/AppFooter";
 import { useNavigate } from "react-router-dom";
 import experience from "./Service/experience.json"
 import stacks from "./Service/stack.json"
+import projects from "./Service/projects.json"
+import AppProject from "./Components/AppProject";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   const navigate = useNavigate();
@@ -119,8 +123,7 @@ function App() {
       <Stack
         as="section"
         align="center"
-        minHeight="100vh"
-        overflowY="auto"
+        minHeight="100%"
         bg="#fff"
         color="black"
         spacing={5}
@@ -133,26 +136,25 @@ function App() {
           Experience
         </Heading>
         {experience.map((item, index) => (
-          <Flex key={index} flexDir={{base: "column", lg: "row"}} width="100%" py={10} alignItems="center" textAlign={{base: "center", lg:"start"}}>
-            <Box paddingX={10} height={{base:"100%", lg:"100px"}} minWidth={{base:"100%", lg:"50%"}} mb={{base: 5, lg: 0}}>
+          <Flex key={index} flexDir={{base: "column", lg: "row"}} width="100%" py={10} >
+            <Box paddingX={10} height={{base:"100%", lg:"130px"}} minWidth={{base:"100%", lg:"50%"}} mb={{base: 5, lg: 0}}>
               <Image src={item.image} alt="project preview" width="100%" height="100%"/>
             </Box>
             <Stack spacing={5}>
-              <Heading>{item.position}</Heading>
-              <HStack justifyContent={{base: "center", lg:"start"}}>
-                <Heading size="sm">{item.company} |</Heading>
-                <Text>{item.periods}</Text>
+              <Heading color="gray.600" >{item.position}</Heading>
+              <HStack >
+                <Heading color="gray.600" size="sm">{item.company} |</Heading>
+                <Text color="gray">{item.periods}</Text>
               </HStack>
               <Stack spacing={1}>
-                <Heading size="sm">Technology Used</Heading>
-                <Text>{item.technology_used}</Text>
+                <Heading color="gray.600" size="sm">Technology Used</Heading>
+                <Text color="gray">{item.technology_used}</Text>
               </Stack>
               <Stack spacing={1}>
-                <Heading size="sm">Project ({item.project_note})</Heading>
-               
+                <Heading color="gray.600" size="sm">Project ({item.project_note})</Heading>
                 <UnorderedList paddingLeft={5}>
                 {item.projects?.map((project, index) => (
-                   <ListItem key={index}>{project}</ListItem>
+                   <ListItem key={index} color="gray">{project}</ListItem>
                 ))}
                 </UnorderedList>
                 
@@ -162,9 +164,8 @@ function App() {
         ))}
         
       </Stack>
-      {/* <Stack
+      <Stack
         as="section"
-        align="center"
         minHeight="100vh"
         overflowY="auto"
         bg="#ffd600"
@@ -175,17 +176,21 @@ function App() {
         pb="6rem"
         id="myproject"
       >
-        <Heading size="lg" fontWeight="bold" mb={8}>
+        <Heading size="lg" textAlign="center" fontWeight="bold" mb={8}>
           My Project
         </Heading>
-        
-      </Stack> */}
+        <Stack spacing={10}>
+        {projects.map((project, index) => (
+          <AppProject key={index} project={project}/>
+        ))}
+        </Stack>
+       
+      </Stack>
       <Stack
         as="section"
         align="center"
-        height="100vh"
+        height="100%"
         justify="center"
-        overflowY="auto"
         bg="black"
         color="white"
         spacing={5}

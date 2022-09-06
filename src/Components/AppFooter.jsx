@@ -8,14 +8,14 @@ export const AppFooter = () => {
       align="center"
       height="100%"
       overflowY="auto"
-      bg="#ffd600"
+      bg="#fff"
       color="black"
       spacing={5}
       px={{ base: "1rem", lg: "10rem" }}
       py="2rem"
     >
       <AppFramerMotion/>
-      <Text>CopyRight © 2022 Bayu Setiawan All Rights Reserved</Text>
+      <Text textAlign="center">CopyRight © 2022 Bayu Setiawan All Rights Reserved</Text>
     </Stack>
   );
 };
