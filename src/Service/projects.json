@@ -5,13 +5,13 @@
         "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore,  Firebase Authentication, and Backend integration using Axios",
         "repository": "Importir.org (Office) Repository",
         "preview_image": [
-            "./project/academy/home.png",
-            "./project/academy/academydetail.png",
-            "./project/academy/crudacademy.png",
-            "./project/academy/crudpackage.png",
-            "./project/academy/auth.png",
-            "./project/academy/integratexendit.png",
-            "./project/academy/myacademy.png"
+            "./project/academy/home.webp",
+            "./project/academy/academydetail.webp",
+            "./project/academy/crudacademy.webp",
+            "./project/academy/crudpackage.webp",
+            "./project/academy/auth.webp",
+            "./project/academy/integratexendit.webp",
+            "./project/academy/myacademy.webp"
         ]
     },
     {
@@ -20,11 +20,11 @@
         "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore, Ethers, Solidity, Express JS and Backend integration using Axios",
         "repository": "Importir.org (Office) Repository",
         "preview_image": [
-            "./project/smartwizard/1.png",
-            "./project/smartwizard/2.png",
-            "./project/smartwizard/3.png",
-            "./project/smartwizard/4.png",
-            "./project/smartwizard/5.png"
+            "./project/smartwizard/1.webp",
+            "./project/smartwizard/2.webp",
+            "./project/smartwizard/3.webp",
+            "./project/smartwizard/4.webp",
+            "./project/smartwizard/5.webp"
         ]
     }
 ]

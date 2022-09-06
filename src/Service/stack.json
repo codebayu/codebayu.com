@@ -1,61 +1,61 @@
 [
     {
-        "logo" : "logo512.png",
+        "logo" : "./stack/logo512.png",
         "label" : "React Js",
         "labelColor" : "#61dafb"
     },
     {
-        "logo" : "./Nextjs-logo.svg",
+        "logo" : "./stack/Nextjs-logo.svg",
         "label" : "Next Js",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./ExpressJS.png",
+        "logo" : "./stack/ExpressJS.png",
         "label" : "Express Js",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./redux.png",
+        "logo" : "./stack/redux.png",
         "label" : "Redux",
         "labelColor" : "#764abc"
     },
     {
-        "logo" : "./firebase.svg",
+        "logo" : "./stack/firebase.svg",
         "label" : "Firebase",
         "labelColor" : "#fcca3f"
     },
     {
-        "logo" : "./chakra.png",
+        "logo" : "./stack/chakra.png",
         "label" : "Chakra UI",
         "labelColor" : "#45c6c0"
     },
     {
-        "logo" : "./logo-mui.png",
+        "logo" : "./stack/logo-mui.png",
         "label" : "Material UI",
         "labelColor" : "#027FFF"
     },
     {
-        "logo" : "./bootstrap.png",
+        "logo" : "./stack/bootstrap.png",
         "label" : "Bootstrap",
         "labelColor" : "#7709f6"
     },
     {
-        "logo" : "./javascript.png",
+        "logo" : "./stack/javascript.png",
         "label" : "JavaScript",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./typescript.png",
+        "logo" : "./stack/typescript.png",
         "label" : "TypeScript",
         "labelColor" : "#2E78C7"
     },
     {
-        "logo" : "./html.png",
+        "logo" : "./stack/html.png",
         "label" : "HTML5",
         "labelColor" : "#fc490b"
     },
     {
-        "logo" : "./css.png",
+        "logo" : "./stack/css.png",
         "label" : "CSS3",
         "labelColor" : "#214ce5"
     }
