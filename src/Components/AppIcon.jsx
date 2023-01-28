@@ -10,22 +10,25 @@ export const AppIcon = (props) => {
       label={label}
       mb={1}
       placement="top"
-      bg="#ffd600"
-      color="black"
+      bg="#9087b7"
+      color="white"
+      transition="0.3s"
     >
       <IconButton
         onClick={() => {
           navigate(window.open(link));
         }}
         colorScheme="on-accent"
-        color="#ffd600"
+        color="#9087b7"
         border="1px"
         rounded="50%"
         icon={icon}
         _hover={{
-          bg: "#ffd600",
-          color: "black",
+          bg: "#9087b7",
+          color: "white",
           transform: "translateY(-3px)",
+          transition: '0.3s',
+          border: "none"
         }}
       />
     </Tooltip>

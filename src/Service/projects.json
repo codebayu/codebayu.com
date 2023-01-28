@@ -1,5 +1,17 @@
 [
     {
+        "title": "Shopping Cart",
+        "description": "This is e-commerce full-stack web application",
+        "technology_used": "React, TypeScript, Material UI, Express JS, JWT, and MongoDB",
+        "repository": "https://github.com/Bayusetiawan45/shopping-cart",
+        "preview_image": [
+            "./project/shopping/1.png",
+            "./project/shopping/2.png",
+            "./project/shopping/3.png",
+            "./project/shopping/4.png"
+        ]
+    },
+    {
         "title": "Entrepreneurs Academy",
         "description": "Entrepreneurs Academy is Iearning Management System (LMS) website built on an Api-to-Api system on the appgregator.co and edutama.id platform.",
         "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore,  Firebase Authentication, and Backend integration using Axios",
