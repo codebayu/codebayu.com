@@ -82,7 +82,7 @@ function App() {
               icon={<FaWhatsapp />}
               link="https://wa.me/+6282385696549"
               label="Whatsapp"
-            /> 
+            />
           </HStack>
           <HStack
             spacing={{ base: "0", lg: "5" }}
@@ -136,9 +136,9 @@ function App() {
           Experience
         </Heading>
         {experience.map((item, index) => (
-          <Flex key={index} flexDir={{base: "column", lg: "row"}} width="100%" py={10} >
-            <Box paddingX={10} height={{base:"100%", lg:"130px"}} minWidth={{base:"100%", lg:"50%"}} mb={{base: 5, lg: 0}}>
-              <Image src={item.image} alt="project preview" width="100%" height="100%"/>
+          <Flex key={index} flexDir={{ base: "column", lg: "row" }} width="100%" py={10} >
+            <Box paddingX={10} height={{ base: "100%", lg: "130px" }} minWidth={{ base: "100%", lg: "50%" }} mb={{ base: 5, lg: 0 }}>
+              <Image src={item.image} alt="project preview" width="100%" height="100%" />
             </Box>
             <Stack spacing={5}>
               <Heading color="gray.600" >{item.position}</Heading>
@@ -153,16 +153,16 @@ function App() {
               <Stack spacing={1}>
                 <Heading color="gray.600" size="sm">Project ({item.project_note})</Heading>
                 <UnorderedList paddingLeft={5}>
-                {item.projects?.map((project, index) => (
-                   <ListItem key={index} color="gray">{project}</ListItem>
-                ))}
+                  {item.projects?.map((project, index) => (
+                    <ListItem key={index} color="gray">{project}</ListItem>
+                  ))}
                 </UnorderedList>
-                
+
               </Stack>
             </Stack>
           </Flex>
         ))}
-        
+
       </Stack>
       <Stack
         as="section"
@@ -180,11 +180,11 @@ function App() {
           My Project
         </Heading>
         <Stack spacing={10}>
-        {projects.map((project, index) => (
-          <AppProject key={index} project={project}/>
-        ))}
+          {projects.map((project, index) => (
+            <AppProject key={index} project={project} />
+          ))}
         </Stack>
-       
+
       </Stack>
       <Stack
         as="section"
@@ -204,7 +204,7 @@ function App() {
         </Heading>
         <SimpleGrid columns={[2, null, 6]} spacing="40px">
           {stacks.map((stack, index) => (
-             <AppStack key={index} src={stack.logo} label={stack.label} labelColor={stack.labelColor} />
+            <AppStack key={index} src={stack.logo} label={stack.label} labelColor={stack.labelColor} />
           ))}
         </SimpleGrid>
       </Stack>
