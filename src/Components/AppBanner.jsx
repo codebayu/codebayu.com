@@ -84,7 +84,7 @@ const AppBanner = () => {
             always eager to learn new technologies and improve my skills
           </Text>
         </Flex>
-        <HStack spacing={3} data-aos="fade-up" marginTop={5} display="flex" justifyContent="center">
+        <HStack spacing={3} data-aos="fade-up" marginTop={5} display="flex" justifyContent={{ base: 'center', lg: 'start' }}>
           {Contact.map((item, idx) => (
             <AppIcon
               key={idx}

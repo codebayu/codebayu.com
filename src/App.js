@@ -46,6 +46,7 @@ function App() {
         <AppNavbar />
         <AppBanner />
       </Box>
+      {/* Experience */}
       <Stack
         as="section"
         minHeight="100%"
@@ -60,7 +61,7 @@ function App() {
         <Heading
           fontSize={{ base: 30, lg: 60 }}
           color="gray.200"
-          marginBottom={50}
+          marginBottom={{ base: 1, lg: 50 }}
         >
           My Experience___
         </Heading>
@@ -99,6 +100,7 @@ function App() {
           ))}
         </SimpleGrid>
       </Stack>
+      {/* Project */}
       <Stack
         as="section"
         overflowY="auto"
@@ -114,7 +116,7 @@ function App() {
         <Heading
           fontSize={{ base: 30, lg: 60 }}
           color="gray.200"
-          marginBottom={50}
+          marginBottom={{ base: 1, lg: 50 }}
         >
           My Project___
         </Heading>
@@ -133,6 +135,8 @@ function App() {
           top={300}
         />
       </Stack>
+
+      {/* Stack */}
       <Stack
         as="section"
         minHeight="70vh"
@@ -147,7 +151,7 @@ function App() {
         <Heading
           fontSize={{ base: 30, lg: 60 }}
           color="gray.200"
-          marginBottom={50}
+          marginBottom={{ base: 1, lg: 50 }}
         >
           My Stack___
         </Heading>
