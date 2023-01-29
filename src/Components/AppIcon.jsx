@@ -1,9 +1,19 @@
 import { IconButton, Tooltip } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 export const AppIcon = (props) => {
   const navigate = useNavigate();
   const { link, icon, label } = props;
+  const onClickIcon = () => {
+    ReactGA.event({
+      category: 'My Contact',
+      action: `Redirect to ${link}`,
+      label: label,
+      value: link
+    })
+    navigate(window.open(link));
+  }
   return (
     <Tooltip
       hasArrow
@@ -15,9 +25,7 @@ export const AppIcon = (props) => {
       transition="0.3s"
     >
       <IconButton
-        onClick={() => {
-          navigate(window.open(link));
-        }}
+        onClick={onClickIcon}
         colorScheme="on-accent"
         color="#9087b7"
         border="1px"
