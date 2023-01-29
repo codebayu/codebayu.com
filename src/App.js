@@ -23,12 +23,17 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import AppBanner from './Components/AppBanner';
 import Aos from 'aos';
+import ReactGA from 'react-ga';
 import 'aos/dist/aos.css';
 import AppBubble from './Components/AppBubble';
 
 function App() {
+  const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+  ReactGA.initialize(TRACKING_ID);
+
   useEffect(() => {
     Aos.init();
+    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (

@@ -1,9 +1,19 @@
 import { Button, Flex } from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 const AppDownloadCV = () => {
   const navigate = useNavigate();
+  const onDownloadCV = () => {
+    ReactGA.event({
+      category: 'Download CV',
+      action: 'test action',
+      label: 'test label',
+      value: 'success'
+    })
+    navigate(window.open('./Bayu-Setiawan-Frontend-Developer.pdf'));
+  }
   return (
     <Flex justifyContent="end">
       <Button
@@ -19,9 +29,7 @@ const AppDownloadCV = () => {
           transition: 'all .2s ease-in-out',
           transform: 'scale(1.1)',
         }}
-        onClick={() => {
-          navigate(window.open('./Bayu-Setiawan-Frontend-Developer.pdf'));
-        }}
+        onClick={onDownloadCV}
       >
         Download My CV
       </Button>
