@@ -26,6 +26,7 @@ import 'aos/dist/aos.css';
 import AppBubble from './Components/AppBubble';
 
 function App() {
+  // Google Analytic
   const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
   ReactGA.initialize(TRACKING_ID);
 

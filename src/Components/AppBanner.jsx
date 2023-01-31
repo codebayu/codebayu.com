@@ -57,7 +57,13 @@ const AppBanner = () => {
         padding={{ base: '1rem', lg: '2rem' }}
         flexDir="column"
       >
-        <Heading color="gray.200" fontSize={{ base: 16, lg: 20 }} textAlign={{ base: 'center', lg: 'start' }}>Hi! I am,</Heading>
+        <Heading
+          color="gray.200"
+          fontSize={{ base: 16, lg: 20 }}
+          textAlign={{ base: 'center', lg: 'start' }}
+        >
+          Hi! I am,
+        </Heading>
         <Flex
           flexDir="column"
           flex={1}
@@ -75,7 +81,13 @@ const AppBanner = () => {
           <Heading fontSize={{ base: 30, lg: 60 }} color="gray.200">
             Bayu Setiawan
           </Heading>
-          <Text fontSize={14} marginTop={4} color="gray.300" maxW="95%" textAlign={{ base: 'center', lg: 'start' }}>
+          <Text
+            fontSize={14}
+            marginTop={4}
+            color="gray.300"
+            maxW="95%"
+            textAlign={{ base: 'center', lg: 'start' }}
+          >
             I am a highly skilled front-end developer with experience in
             building web applications. Proficient in TypeScript and well-versed
             in popular frameworks such as React JS, Next JS, and Material UI.
@@ -84,7 +96,13 @@ const AppBanner = () => {
             always eager to learn new technologies and improve my skills
           </Text>
         </Flex>
-        <HStack spacing={3} data-aos="fade-up" marginTop={5} display="flex" justifyContent={{ base: 'center', lg: 'start' }}>
+        <HStack
+          spacing={3}
+          data-aos="fade-up"
+          marginTop={5}
+          display="flex"
+          justifyContent={{ base: 'center', lg: 'start' }}
+        >
           {Contact.map((item, idx) => (
             <AppIcon
               key={idx}
