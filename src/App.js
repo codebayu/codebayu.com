@@ -107,7 +107,7 @@ function App() {
       {/* Project */}
       <Stack
         as="section"
-        overflowY="auto"
+        overflow="hidden"
         bg="#353a6b"
         color="gray.200"
         spacing={5}
@@ -116,6 +116,7 @@ function App() {
         pb="6rem"
         id="myproject"
         position="relative"
+        height="100%"
       >
         <Heading
           fontSize={{ base: 30, lg: 60 }}
