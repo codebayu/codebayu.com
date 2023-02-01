@@ -1,5 +1,18 @@
 [
     {
+        "title": "Otodidoc.",
+        "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
+        "technology_used": "React, Chakra UI, Firebase",
+        "repository": "https://github.com/Bayusetiawan45/academy",
+        "preview_image": [
+            "./project/otodidoc/1.png",
+            "./project/otodidoc/2.png",
+            "./project/otodidoc/3.png",
+            "./project/otodidoc/4.png",
+            "./project/otodidoc/5.png"
+        ]
+    },
+    {
         "title": "Shopping Cart",
         "description": "This is e-commerce full-stack web application",
         "technology_used": "React, TypeScript, Material UI, Express JS, JWT, and MongoDB",
@@ -37,19 +50,6 @@
             "./project/smartwizard/3.webp",
             "./project/smartwizard/4.webp",
             "./project/smartwizard/5.webp"
-        ]
-    },
-      {
-        "title": "Otodidoc.",
-        "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
-        "technology_used": "React, Chakra UI, Firebase",
-        "repository": "https://github.com/Bayusetiawan45/academy",
-        "preview_image": [
-            "./project/otodidoc/1.png",
-            "./project/otodidoc/2.png",
-            "./project/otodidoc/3.png",
-            "./project/otodidoc/4.png",
-            "./project/otodidoc/5.png"
         ]
     }
 ]
