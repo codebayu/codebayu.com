@@ -4,6 +4,7 @@ import { Box } from '@chakra-ui/react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
 
 import { usePageViewGA } from './Hooks/usePageViewHooks';
 import { useAos } from './Hooks/useAos';
@@ -18,6 +19,7 @@ import { AppNavbar } from './Components/AppNavbar';
 import { AppFooter } from './Components/AppFooter';
 
 function App() {
+  ReactGA.initialize(process.env.REACT_APP_TRACKING_ID || '');
   usePageViewGA();
   useAos();
 
