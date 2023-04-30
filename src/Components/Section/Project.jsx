@@ -1,10 +1,10 @@
 import { Box, Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
-import AppProject from '../AppProject';
+import Project from '../Project';
 
 import projects from '../../Service/projects.json';
 
-const Project = () => {
+const ProjectSection = () => {
   return (
     <Stack
       as="section"
@@ -28,7 +28,7 @@ const Project = () => {
       </Heading>
       <Stack spacing={10} position="relative">
         {projects.map((project, index) => (
-          <AppProject key={index} project={project} />
+          <Project key={index} project={project} />
         ))}
       </Stack>
       <Box
@@ -44,4 +44,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectSection;

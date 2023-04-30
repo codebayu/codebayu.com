@@ -3,7 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
-const AppDownloadCV = () => {
+const DownloadCV = () => {
   const navigate = useNavigate();
   const onDownloadCV = () => {
     ReactGA.event({
@@ -15,7 +15,7 @@ const AppDownloadCV = () => {
     navigate(window.open('./Bayu-Setiawan-Frontend-Developer.pdf'));
   }
   return (
-    <Flex justifyContent="end">
+    <Flex justifyContent="end" data-testid="download-cv">
       <Button
         variant="ghost"
         rounded="lg"
@@ -37,4 +37,4 @@ const AppDownloadCV = () => {
   );
 };
 
-export default AppDownloadCV;
+export default DownloadCV;

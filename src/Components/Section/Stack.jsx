@@ -1,6 +1,6 @@
 import { Heading, SimpleGrid, Stack } from '@chakra-ui/react';
 import React from 'react';
-import { AppStack } from '../AppStack';
+import { Stack as MyStack } from '../Stack';
 import stacks from '../../Service/stack.json';
 
 const Stacks = () => {
@@ -25,7 +25,7 @@ const Stacks = () => {
       </Heading>
       <SimpleGrid columns={[2, null, 6]} spacing="40px">
         {stacks.map((stack, index) => (
-          <AppStack
+          <MyStack
             key={index}
             src={stack.logo}
             label={stack.label}

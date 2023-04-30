@@ -2,7 +2,7 @@ import { IconButton, Tooltip } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import ReactGA from 'react-ga';
 
-export const AppIcon = (props) => {
+export const Icon = (props) => {
   const navigate = useNavigate();
   const { link, icon, label } = props;
   const onClickIcon = () => {

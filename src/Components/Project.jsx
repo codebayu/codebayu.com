@@ -1,8 +1,8 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
-import AppSlider from './AppSlider';
+import CustomSlider from './Slider';
 
-export default function AppProject({ project }) {
+export default function Project({ project }) {
   return (
     <Flex
       flexDir={{ base: 'column', lg: 'row' }}
@@ -14,7 +14,7 @@ export default function AppProject({ project }) {
       data-aos="fade-up"
     >
       <Flex rounded="xl" mb={{ base: 8, lg: 0 }} marginRight={10}>
-        <AppSlider image={project.preview_image} />
+        <CustomSlider image={project.preview_image} />
       </Flex>
       <Flex textAlign="start" flexDir="column" color="gray.200">
         <Heading size="lg" fontWeight="bold" mb={5}>

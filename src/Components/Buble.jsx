@@ -1,9 +1,10 @@
 import { Box } from '@chakra-ui/react';
 import React from 'react';
 
-const AppBubble = () => {
+const Buble = () => {
   return (
     <Box
+      data-testid="buble"
       width="30rem"
       height="30rem"
       background="#3f4479"
@@ -23,4 +24,4 @@ const AppBubble = () => {
   );
 };
 
-export default AppBubble;
+export default Buble;

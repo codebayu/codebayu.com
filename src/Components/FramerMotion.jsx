@@ -21,6 +21,7 @@ export default function FramerMotion() {
       width="4"
       height="4"
       display="flex"
+      data-testid="framer-motion"
     />
   );
 }

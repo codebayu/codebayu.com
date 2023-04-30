@@ -1,8 +1,8 @@
 import { Link } from 'react-scroll';
 import { Text, HStack } from '@chakra-ui/react';
-import AppDownloadCV from './AppDownloadCV';
+import DownloadCV from './DownloadCV';
 
-export const AppNavbar = () => {
+export const Navbar = () => {
   return (
     <HStack position="relative" justifyContent="space-between" display={{ base: 'none', lg: 'flex' }}>
       <HStack
@@ -46,7 +46,7 @@ export const AppNavbar = () => {
         </Link>
       </HStack>
 
-      <AppDownloadCV />
+      <DownloadCV />
     </HStack>
   );
 };

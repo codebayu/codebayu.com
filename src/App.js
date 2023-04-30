@@ -10,13 +10,13 @@ import { usePageViewGA } from './Hooks/usePageViewHooks';
 import { useAos } from './Hooks/useAos';
 
 import Experience from './Components/Section/Experience';
-import Project from './Components/Section/Project';
 import Stacks from './Components/Section/Stack';
-import AppBanner from './Components/AppBanner';
-import AppBubble from './Components/AppBubble';
+import Banner from './Components/Banner';
+import Buble from './Components/Buble';
 
-import { AppNavbar } from './Components/AppNavbar';
-import { AppFooter } from './Components/AppFooter';
+import { Navbar } from './Components/Navbar';
+import { Footer } from './Components/Footer';
+import ProjectSection from './Components/Section/Project';
 
 function App() {
   ReactGA.initialize(process.env.REACT_APP_TRACKING_ID || '');
@@ -34,14 +34,14 @@ function App() {
         px={{ base: '1rem', lg: '10rem' }}
         id="home"
       >
-        <AppBubble />
-        <AppNavbar />
-        <AppBanner />
+        <Buble />
+        <Navbar />
+        <Banner />
       </Box>
       <Experience />
-      <Project />
+      <ProjectSection />
       <Stacks />
-      <AppFooter />
+      <Footer />
     </Box>
   );
 }

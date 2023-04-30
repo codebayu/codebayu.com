@@ -1,6 +1,6 @@
 import { Image, Heading, Flex } from '@chakra-ui/react';
 
-export const AppStack = (props) => {
+export const Stack = (props) => {
   const { label, src, labelColor } = props;
   return (
     <Flex

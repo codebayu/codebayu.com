@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, HStack, Image, Text } from '@chakra-ui/react';
 import React from 'react';
-import { AppIcon } from './AppIcon';
+import { Icon } from './Icon';
 
 import {
   FaGithub,
@@ -10,7 +10,7 @@ import {
   FaEnvelope,
 } from 'react-icons/fa';
 
-const AppBanner = () => {
+const Banner = () => {
   const Contact = [
     {
       label: 'Github',
@@ -104,7 +104,7 @@ const AppBanner = () => {
           justifyContent={{ base: 'center', lg: 'start' }}
         >
           {Contact.map((item, idx) => (
-            <AppIcon
+            <Icon
               key={idx}
               icon={item.icon}
               link={item.link}
@@ -146,4 +146,4 @@ const AppBanner = () => {
   );
 };
 
-export default AppBanner;
+export default Banner;

@@ -1,6 +1,6 @@
 import { Stack, Image, Text, Box, Flex, Divider } from "@chakra-ui/react";
 
-export const AppCard = (props) => {
+export const Card = (props) => {
   const { label, src, date } = props;
   return (
       <Stack
