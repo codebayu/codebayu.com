@@ -21,7 +21,7 @@ const Experience = () => {
       color="black"
       spacing={5}
       px={{ base: '1rem', lg: '10rem' }}
-      pt="2rem"
+      pt="10rem"
       pb="6rem"
       id="experience"
     >
