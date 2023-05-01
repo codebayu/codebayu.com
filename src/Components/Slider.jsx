@@ -15,7 +15,7 @@ export default function CustomSlider({ image }) {
         autoplaySpeed: 2000
     };
     return (
-        <Box width={{ base: "20rem", lg: "35rem" }} height="100%" bg="#555d9e" alignItems="center" rounded="xl" paddingX={{ base: "0.5rem", lg: "2rem" }}>
+        <Box data-testid="slider" width={{ base: "20rem", lg: "35rem" }} height="100%" bg="#555d9e" alignItems="center" rounded="xl" paddingX={{ base: "0.5rem", lg: "2rem" }}>
             <Slider {...settings}>
                 {image.map((item, index) => (
                     <Box key={index} padding={5} height={{ base: "9rem", lg: "16rem" }} rounded="xl">

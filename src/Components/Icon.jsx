@@ -25,6 +25,7 @@ export const Icon = (props) => {
       transition="0.3s"
     >
       <IconButton
+        data-testid="icon"
         onClick={onClickIcon}
         colorScheme="on-accent"
         color="#9087b7"

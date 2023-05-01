@@ -1,26 +1,39 @@
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { fireEvent, render, screen } from '../../setupTests';
+import ReactGA from 'react-ga';
 import DownloadCV from '../DownloadCV';
-import { ThemeProvider, extendTheme } from '@chakra-ui/react';
-
-const mockedUsedNavigate = jest.fn();
-
-jest.mock("react-router-dom", () => ({
-  ...(jest.requireActual("react-router-dom")),
-  useNavigate: () => mockedUsedNavigate
-}));
 
 describe('DownloadCV component', () => {
-  const theme = extendTheme({})
-  const setup = () => render(<ThemeProvider theme={theme}><DownloadCV /></ThemeProvider>);
 
   it('should render the button download', () => {
-    setup()
+    render(<DownloadCV />)
     const button = screen.getByRole('button');
     expect(button).toBeInTheDocument();
   });
 
+  it('calls ReactGA.event when the button is clicked', () => {
+    render(<DownloadCV />);
+    const buttonElement = screen.getByText(/Download My CV/i);
+    fireEvent.click(buttonElement);
+    expect(ReactGA.event).toHaveBeenCalledTimes(1);
+    expect(ReactGA.event).toHaveBeenCalledWith({
+      category: 'Download CV',
+      action: 'test action',
+      label: 'test label',
+      value: 'success',
+    });
+  });
+
+  // it('navigates to the correct URL when the button is clicked', () => {
+  //   const navigateMock = jest.fn();
+  //   useNavigate.mockReturnValue(navigateMock);
+  //   render(<DownloadCV />);
+  //   const buttonElement = screen.getByText(/Download My CV/i);
+  //   fireEvent.click(buttonElement);
+  //   expect(navigateMock).toHaveBeenCalledTimes(1);
+  //   expect(navigateMock).toHaveBeenCalledWith('./Bayu-Setiawan-Frontend-Developer.pdf');
+  // });
+
   it('renders without throwing an error', () => {
-    expect(() => render(<ThemeProvider theme={theme}><DownloadCV /></ThemeProvider>)).not.toThrow();
+    expect(() => render(<DownloadCV />)).not.toThrow();
   });
 });

@@ -1,8 +1,8 @@
-import '@testing-library/jest-dom';
-import { render, screen } from '@testing-library/react';
+import { render, screen } from '../../setupTests';
 import Buble from '../Buble';
 
 describe('Buble component', () => {
+  
   it('should render the buble with correct styles', () => {
     render(<Buble />);
     const buble = screen.getByTestId('buble');

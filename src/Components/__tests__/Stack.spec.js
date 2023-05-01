@@ -1,19 +1,17 @@
-import { Card } from '../Card'
 import { render, screen } from "../../setupTests"
+import { Stack } from '../Stack'
 
-describe('Card Component', () => {
+describe('Stack Component', () => {
   
   const props = {
-    label: 'test label',
+    label: 'Bootstrap',
     src: 'https://bit.ly/dan-abramov',
-    date: '12 January 2023'
+    labelColor: '#61dafb'
   }
 
   it('accepts and renders the correct props', () => {
-    render(<Card {...props}/>);
-
+    render(<Stack {...props}/>);
     expect(screen.getByText(props.label)).toBeInTheDocument();
-    expect(screen.getByText(props.date)).toBeInTheDocument();
     
     const img = screen.getByRole('img');
     expect(img).toBeInTheDocument();
@@ -21,6 +19,6 @@ describe('Card Component', () => {
   });
 
   it('renders without throwing an error', () => {
-    expect(() => render(<Card {...props}/>)).not.toThrow();
+    expect(() => render(<Stack {...props}/>)).not.toThrow();
   });
 });
