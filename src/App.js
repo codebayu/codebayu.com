@@ -19,7 +19,7 @@ import { Footer } from './Components/Footer';
 import ProjectSection from './Components/Section/Project';
 
 function App() {
-  ReactGA.initialize(process.env.REACT_APP_TRACKING_ID || '');
+  ReactGA.initialize('G-HX2V9VBWRR');
   usePageViewGA();
   useAos();
 

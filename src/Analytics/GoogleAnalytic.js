@@ -6,7 +6,7 @@ class GAClass {
   }
 
   init() {
-    const TRACKING_ID = process.env.REACT_APP_TRACKING_ID;
+    const TRACKING_ID = 'G-HX2V9VBWRR';
     const isDev =
       !process.env.NODE_ENV || process.env.NODE_ENV !== 'production';
     if (isDev) return;
