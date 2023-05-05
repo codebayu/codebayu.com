@@ -17,7 +17,7 @@ export default function FramerMotion() {
       as={motion.div}
       animation={animation}
       padding="2"
-      bgGradient="linear(to-l, #353a6b, #9087b7)"
+      bgGradient="linear(to-l, gray.500, gray.100)"
       width="4"
       height="4"
       display="flex"

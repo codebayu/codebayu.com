@@ -7,7 +7,7 @@ const Buble = () => {
       data-testid="buble"
       width="30rem"
       height="30rem"
-      background="#3f4479"
+      background="gray.500"
       borderRadius="15rem"
       position="absolute"
       top={-200}

@@ -40,67 +40,67 @@ const Banner = () => {
   ];
   return (
     <Flex
-      w="100%"
-      background="#555d9e"
-      borderRadius="25px"
-      boxShadow="rgba(0, 0, 0, 0.35) 0px 20px 35px"
-      overflow="hidden"
-      marginTop={50}
+      w='100%'
+      background='gray.300'
+      borderRadius='25px'
+      boxShadow='rgba(0, 0, 0, 0.35) 0px 20px 35px'
+      overflow='hidden'
+      marginTop={30}
       zIndex={1}
-      position="relative"
-      data-aos="zoom-in"
+      position='relative'
+      data-aos='zoom-in'
       flexDir={{ base: 'column', lg: 'row' }}
     >
       <Flex
         flex={1}
-        fontFamily="Roboto"
+        fontFamily='Roboto'
         padding={{ base: '1rem', lg: '2rem' }}
-        flexDir="column"
+        flexDir='column'
       >
         <Heading
-          color="gray.200"
+          color='gray.800'
           fontSize={{ base: 16, lg: 20 }}
           textAlign={{ base: 'center', lg: 'start' }}
         >
           Hi! I am,
         </Heading>
         <Flex
-          flexDir="column"
+          flexDir='column'
           flex={1}
-          justifyContent="center"
+          justifyContent='center'
           alignItems={{ base: 'center', lg: 'start' }}
-          marginLeft={{ base: 0, lg: '5rem' }}
+          gap={4}
         >
-          <Text
-            fontSize={{ base: 16, lg: 20 }}
-            fontWeight={500}
-            color="gray.300"
-          >
-            Frontend Developer
-          </Text>
-          <Heading fontSize={{ base: 30, lg: 60 }} color="gray.200">
+          <Heading fontSize={{ base: 30, lg: 60 }} color='gray.800'>
             Bayu Setiawan
           </Heading>
           <Text
-            fontSize={14}
-            marginTop={4}
-            color="gray.300"
-            maxW="95%"
+            fontSize={{ base: 16, lg: 20 }}
+            fontWeight={500}
+            color='gray.800'
+          >
+            Frontend Developer
+          </Text>
+          <Text
+            fontSize={12}
+            color='gray.800'
+            maxW='95%'
             textAlign={{ base: 'center', lg: 'start' }}
           >
-            I am a highly skilled front-end developer with experience in
-            building web applications. Proficient in TypeScript and well-versed
-            in popular frameworks such as React JS, Next JS, and Material UI.
-            With my technical expertise, I am able to create highly performant
-            and elegant solutions that are easy to maintain and scale. I am
-            always eager to learn new technologies and improve my skills
+            As a front-end developer, I specialize in building elegant and
+            high-performing web applications using TypeScript and popular
+            frameworks like Next JS and Nuxt JS. With my
+            technical skills, I create solutions that are easy to maintain and
+            scale, always striving to learn and implement new technologies. If
+            you're looking for a developer who can bring your vision to life
+            with style and precision, look no further!
           </Text>
         </Flex>
         <HStack
           spacing={3}
-          data-aos="fade-up"
+          data-aos='fade-up'
           marginTop={5}
-          display="flex"
+          display='flex'
           justifyContent={{ base: 'center', lg: 'start' }}
         >
           {Contact.map((item, idx) => (
@@ -115,23 +115,23 @@ const Banner = () => {
       </Flex>
       <Box
         flex={1}
-        position="relative"
-        alignItems="end"
-        background="rgb(144,135,183)"
-        bgGradient="linear-gradient(120deg, rgba(144,135,183,1) 30%, rgba(149,159,244,1) 100%)"
+        position='relative'
+        alignItems='end'
+        background='gray.300'
+        bgGradient='linear-gradient(120deg, gray.400 30%, gray.300 100%)'
       >
         <Image
-          src="./bayu-no-bg.png"
-          width="100%"
-          alt="my image"
-          filter="grayscale(50%) drop-shadow(4px 4px 6px #555d9e)"
+          src='./bayu-no-bg.png'
+          width='100%'
+          alt='my image'
+          filter='grayscale(50%) drop-shadow(4px 4px 6px #fcfcfc)'
         />
         <Box
-          width="20rem"
-          height="20rem"
-          background="#555d9e"
-          borderRadius="15rem"
-          position="absolute"
+          width='20rem'
+          height='20rem'
+          background='gray.400'
+          borderRadius='15rem'
+          position='absolute'
           top={-200}
           right={-200}
           _hover={{

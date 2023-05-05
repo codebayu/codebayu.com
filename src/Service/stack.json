@@ -10,6 +10,21 @@
         "labelColor" : "#000"
     },
     {
+        "logo" : "./stack/vue.png",
+        "label" : "Vue Js",
+        "labelColor" : "#3fb984"
+    },
+    {
+        "logo" : "./stack/nuxt.png",
+        "label" : "Nuxt Js",
+        "labelColor" : "#000"
+    },
+    {
+        "logo" : "./stack/jest.png",
+        "label" : "Jest",
+        "labelColor" : "#c63d14"
+    },
+    {
         "logo" : "./stack/ExpressJS.png",
         "label" : "Express Js",
         "labelColor" : "#000"

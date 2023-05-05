@@ -15,7 +15,7 @@ export const Stack = (props) => {
       data-aos="zoom-in"
     >
       <Image height="2rem" src={src} alt={label} />
-      <Heading size="md" color={labelColor} mt={3}>
+      <Heading size="sm" color={labelColor} mt={3}>
         {label}
       </Heading>
     </Flex>

@@ -1,7 +1,16 @@
 [
     {
         "position" : "Frontend Developer",
-        "periods": "August 2022 - Now",
+        "periods": "April 2023 - Now",
+        "company": "Harian Kompas",
+        "technology_used": "Nuxt Js, Vue Js, Jest, Tailwind UI, Typescript",
+        "projects": ["E-Paper, Subscription, Checkout Page"],
+        "project_note": "Frontend and Backend Integration",
+        "image": "./logo/logo_Alteacare.svg"
+    },
+    {
+        "position" : "Frontend Developer",
+        "periods": "August 2022 - April 2023",
         "company": "AlteaCare",
         "technology_used": "Next Js, React Js, Material UI, Atomic Design, Typescript",
         "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
@@ -9,12 +18,12 @@
         "image": "./logo/logo_Alteacare.svg"
     },
     {
-        "position" : "Frontend Developer",
+        "position" : "Fullstack Developer",
         "periods": "April - August 2022",
         "company": "importir.org",
         "technology_used": "React Js, Firebase Deployment, Firestore, Cloud Storage, MySQL, Chakra  UI",
         "projects": ["Academy (Learning Management System)", "Smart Wizard (Web3/ Blockchain Network)", "Projeq.id (Website for integrating application from finance, accounting, human resourse, and general affair"],
-        "project_note": "Frontend, UI/UX Designer,  and Backend Integration",
+        "project_note": "Frontend, UI/UX Designer, Backend Integration, Cloud Services",
         "image": "./logo/importir.webp"
     },
     {

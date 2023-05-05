@@ -12,11 +12,9 @@ import { useAos } from './Hooks/useAos';
 import Experience from './Components/Section/Experience';
 import Stacks from './Components/Section/Stack';
 import Banner from './Components/Banner';
-import Buble from './Components/Buble';
 
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
-import ProjectSection from './Components/Section/Project';
 
 function App() {
   ReactGA.initialize('G-HX2V9VBWRR');
@@ -28,18 +26,15 @@ function App() {
       <Box
         as="section"
         height={{ base: '100%', lg: '100vh' }}
-        bg="#353a6b"
-        color="white"
-        py="2rem"
+        bg="gray.100"
+        color="#000"
         px={{ base: '1rem', lg: '10rem' }}
         id="home"
       >
-        <Buble />
         <Navbar />
         <Banner />
       </Box>
       <Experience />
-      <ProjectSection />
       <Stacks />
       <Footer />
     </Box>
