@@ -8,7 +8,7 @@ export const Footer = () => {
       align="center"
       height="100%"
       overflowY="auto"
-      bg="rgba(149,159,244,1)"
+      bg="gray.300"
       color="black"
       spacing={5}
       px={{ base: "1rem", lg: "10rem" }}

@@ -19,13 +19,13 @@ const DownloadCV = () => {
       <Button
         variant="ghost"
         rounded="lg"
-        color="gray.200"
+        color="gray.800"
         px="3rem"
         py="1.5rem"
         fontWeight="bold"
         _hover={{
-          bg: '#3f4479',
-          color: 'gray.200',
+          bg: 'gray.300',
+          color: '#000',
           transition: 'all .2s ease-in-out',
           transform: 'scale(1.1)',
         }}

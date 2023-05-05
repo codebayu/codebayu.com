@@ -17,34 +17,32 @@ const Experience = () => {
     <Stack
       as="section"
       minHeight="100%"
-      bg="#353a6b"
+      bg="gray.300"
       color="black"
-      spacing={5}
+      spacing={2}
       px={{ base: '1rem', lg: '10rem' }}
-      pt="10rem"
+      pt="7rem"
       pb="6rem"
       id="experience"
     >
       <Heading
-        fontSize={{ base: 30, lg: 60 }}
-        color="gray.200"
+        fontSize={{ base: 20, lg: 50 }}
+        color="gray.800"
         marginBottom={{ base: 1, lg: 50 }}
       >
-        My Experience___
+        My Experience
       </Heading>
-      <SimpleGrid spacing={10}>
+      <SimpleGrid spacing={7}>
         {experience.map((item, index) => (
           <Flex
             key={index}
             flexDir={{ base: 'column', lg: 'row' }}
             width="100%"
-            p={5}
-            color="gray.200"
-            border="1px solid #9087b7"
+            color="gray.800"
             borderRadius="20px"
             data-aos="fade-up"
           >
-            <Stack spacing={5}>
+            <Stack spacing={2}>
               <Heading fontSize={30}>{item.position}</Heading>
               <HStack>
                 <Heading size="sm">{item.company} |</Heading>

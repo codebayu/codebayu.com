@@ -8,20 +8,19 @@ const Stacks = () => {
     <Stack
       as="section"
       minHeight="70vh"
-      bg="#353a6b"
-      color="gray.200"
+      bg="gray.100"
+      color="gray.100"
       spacing={5}
-      px={{ base: '1rem', lg: '4rem' }}
-      pt="2rem"
+      px={{ base: '1rem', lg: '10rem' }}
+      py="5rem"
       id="mystack"
-      bgGradient="linear-gradient(180deg, #353a6b 30%, rgba(149,159,244,1) 100%)"
     >
       <Heading
         fontSize={{ base: 30, lg: 60 }}
-        color="gray.200"
+        color="gray.800"
         marginBottom={{ base: 1, lg: 50 }}
       >
-        My Stack___
+        Tech Stack
       </Heading>
       <SimpleGrid columns={[2, null, 6]} spacing="40px">
         {stacks.map((stack, index) => (
