@@ -20,7 +20,7 @@ import { Maps } from './Components/Maps';
 function App() {
   usePageViewGA();
   useAos();
-
+  
   useEffect(() => {
     ReactGA.initialize('G-HX2V9VBWRR');
   }, []);
