@@ -29,11 +29,13 @@ function App() {
     <Box>
       <Box
         as='section'
-        height={{ base: '100%', lg: '100vh' }}
+        height={{ base: '100%' }}
         bg='gray.100'
         color='#000'
         px={{ base: '1rem', lg: '10rem' }}
         id='home'
+        py={1}
+        pb={10}
       >
         <Navbar />
         <Banner />
@@ -46,4 +48,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
