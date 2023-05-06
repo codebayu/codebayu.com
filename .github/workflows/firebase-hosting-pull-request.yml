@@ -16,5 +16,12 @@ jobs:
         run: npm install yarn@latest -g
       - name: Install dependencies
         run: yarn
-      - name: Run unit test
-        run: yarn test
+      - name: Generate Test Coverage
+        run: yarn test-coverage
+      - name: Report code coverage
+        uses: romeovs/lcov-reporter-action@v0.3.1
+        with:
+          lcov-file: ./coverage/lcov.info
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          filter-changed-files: true
+          delete-old-comments: true
