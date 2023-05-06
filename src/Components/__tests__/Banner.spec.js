@@ -17,7 +17,7 @@ describe('Banner component', () => {
 
   it('should render the description', () => {
     render(<Banner />)
-    const description = screen.getByText(/I am a highly skilled/i);
+    const description = screen.getByText(/As a front-end developer,/i);
     expect(description).toBeInTheDocument();
   });
 

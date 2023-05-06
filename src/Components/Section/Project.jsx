@@ -24,7 +24,7 @@ const ProjectSection = () => {
         color="gray.200"
         marginBottom={{ base: 1, lg: 50 }}
       >
-        My Project___
+        My Project
       </Heading>
       <Stack spacing={10} position="relative">
         {projects.map((project, index) => (
