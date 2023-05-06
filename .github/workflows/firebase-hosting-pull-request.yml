@@ -6,6 +6,7 @@ on:
   pull_request:
     branches:
       - main
+      - staging
 jobs:
   test:
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
