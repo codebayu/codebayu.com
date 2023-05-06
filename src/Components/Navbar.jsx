@@ -4,7 +4,7 @@ import DownloadCV from './DownloadCV';
 
 export const Navbar = () => {
   return (
-    <HStack position="relative" justifyContent="space-between" display={{ base: 'none', lg: 'flex' }}>
+    <HStack data-testid="navbar" position="relative" justifyContent="space-between" display={{ base: 'none', lg: 'flex' }}>
       <HStack
         fontWeight="bold"
         fontSize={{ base: 12, lg: 16 }}

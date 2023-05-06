@@ -14,6 +14,7 @@ const Stacks = () => {
       px={{ base: '1rem', lg: '10rem' }}
       py="5rem"
       id="mystack"
+      data-testid="stacks"
     >
       <Heading
         fontSize={{ base: 30, lg: 60 }}

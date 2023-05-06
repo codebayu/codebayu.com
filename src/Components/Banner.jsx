@@ -50,6 +50,7 @@ const Banner = () => {
       position='relative'
       data-aos='zoom-in'
       flexDir={{ base: 'column', lg: 'row' }}
+      data-testid="banner"
     >
       <Flex
         flex={1}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 
 import 'slick-carousel/slick/slick.css';
@@ -15,27 +15,32 @@ import Banner from './Components/Banner';
 
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
+import { Maps } from './Components/Maps';
 
 function App() {
-  ReactGA.initialize('G-HX2V9VBWRR');
   usePageViewGA();
   useAos();
+
+  useEffect(() => {
+    ReactGA.initialize('G-HX2V9VBWRR');
+  }, []);
 
   return (
     <Box>
       <Box
-        as="section"
+        as='section'
         height={{ base: '100%', lg: '100vh' }}
-        bg="gray.100"
-        color="#000"
+        bg='gray.100'
+        color='#000'
         px={{ base: '1rem', lg: '10rem' }}
-        id="home"
+        id='home'
       >
         <Navbar />
         <Banner />
       </Box>
       <Experience />
       <Stacks />
+      <Maps />
       <Footer />
     </Box>
   );

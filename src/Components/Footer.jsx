@@ -8,11 +8,12 @@ export const Footer = () => {
       align="center"
       height="100%"
       overflowY="auto"
-      bg="gray.300"
+      bg="gray.100"
       color="black"
       spacing={5}
       px={{ base: "1rem", lg: "10rem" }}
       py="2rem"
+      data-testid="footer"
     >
       <FramerMotion />
       <Text textAlign="center">CopyRight © 2022 Bayu Setiawan All Rights Reserved</Text>
