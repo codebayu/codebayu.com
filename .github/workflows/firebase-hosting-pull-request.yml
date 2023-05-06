@@ -26,3 +26,31 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           filter-changed-files: true
           delete-old-comments: true
+      - name: Upload coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage-report
+          path: coverage
+
+      - name: Comment on pull request with coverage report
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+
+            const coveragePath = './coverage/index.html';
+            const coverageReport = fs.readFileSync(coveragePath, 'utf8');
+
+            const prNumber = context.payload.pull_request.number;
+
+            github.rest.pulls.createReviewComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              body: `Coverage Report:\n\n${coverageReport}`,
+              commit_id: context.payload.pull_request.head.sha,
+              path: coveragePath,
+              side: 'RIGHT',
+              line: 1
+            });
