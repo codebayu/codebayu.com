@@ -6,7 +6,7 @@ export const Stack = (props) => {
   return (
     <Flex sx={sx.container} data-aos="zoom-in">
       <Image height="2rem" src={src} alt={label} />
-      <Heading sx={{...sx.label, color: labelColor}}>
+      <Heading size="sm" sx={{...sx.label, color: labelColor}}>
         {label}
       </Heading>
     </Flex>

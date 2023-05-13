@@ -8,10 +8,7 @@ export const bannerStyles = {
     marginTop: 30,
     zIndex: 1,
     position: 'relative',
-    flexDir: {
-      base: { flexDir: 'column' },
-      lg: { flexDir: 'row' },
-    },
+    flexDir: { base: 'column', lg: 'row' },
   },
   wrap: {
     flex: 1,

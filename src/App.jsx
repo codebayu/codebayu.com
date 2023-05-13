@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { Box } from '@chakra-ui/react';
 
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import 'aos/dist/aos.css';
 import ReactGA from 'react-ga';
 

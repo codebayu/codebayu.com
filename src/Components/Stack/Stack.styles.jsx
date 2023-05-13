@@ -10,7 +10,6 @@ export const stackStyles = {
     rounded: 'lg',
   },
   label: {
-    size: "sm",
     mt: 3
   }
 };
