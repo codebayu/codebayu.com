@@ -14,17 +14,19 @@ import Banner from './Components/Banner';
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import { Maps } from './Components/Maps';
+import { Lines } from './Components/Lines';
 
 function App() {
   usePageViewGA();
   useAos();
-  
+
   useEffect(() => {
     ReactGA.initialize('G-HX2V9VBWRR');
   }, []);
 
   return (
     <Box>
+      <Lines />
       <Box
         as='section'
         height={{ base: '100%' }}
@@ -46,4 +48,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

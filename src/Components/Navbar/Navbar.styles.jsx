@@ -3,6 +3,7 @@ export const navbarStyles = {
     position: 'relative',
     justifyContent: 'space-between',
     display: { base: 'none', lg: 'flex' },
+    zIndex: 10
   },
   wrap: {
     fontWeight: 'bold',

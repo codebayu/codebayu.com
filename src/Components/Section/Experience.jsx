@@ -25,6 +25,8 @@ const Experience = () => {
       pb="6rem"
       id="experience"
       data-testid="experience-section"
+      zIndex={2}
+      position="relative"
     >
       <Heading
         fontSize={{ base: 20, lg: 50 }}
