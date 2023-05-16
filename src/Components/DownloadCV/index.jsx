@@ -13,7 +13,7 @@ const DownloadCV = () => {
       label: 'test label',
       value: 'success'
     })
-    navigate(window.open('./Bayu-Setiawan-Frontend-Developer.pdf'));
+    navigate(window.open('./Bayu-Setiawan-Frontend-Developer-CV.pdf'));
   }
   return (
     <Flex data-testid="download-cv">
