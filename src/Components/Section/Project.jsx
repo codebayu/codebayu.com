@@ -9,7 +9,7 @@ const ProjectSection = () => {
     <Stack
       as="section"
       overflow="hidden"
-      bg="gray.300"
+      bg="#eeeeee"
       color="black"
       spacing={5}
       px={{ base: '1rem', lg: '10rem' }}

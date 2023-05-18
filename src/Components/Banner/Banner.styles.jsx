@@ -1,7 +1,7 @@
 export const bannerStyles = {
   container: {
     width: '100%',
-    background: 'gray.300',
+    background: '#eeeeee',
     borderRadius: '25px',
     boxShadow: 'rgba(0, 0, 0, 0.35) 0px 20px 35px',
     overflow: 'hidden',

@@ -17,7 +17,7 @@ const Experience = () => {
     <Stack
       as="section"
       minHeight="100%"
-      bg="gray.300"
+      bg="#eeeeee"
       color="black"
       spacing={2}
       px={{ base: '1rem', lg: '10rem' }}
