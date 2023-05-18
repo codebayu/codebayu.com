@@ -5,7 +5,7 @@ import { linesStyles as sx } from './Lines.styles';
 
 export const Lines = () => {
   const [animationState, setAnimationState] = useState({
-    dashArray: '0px 1px',
+    dashArray: '0px 2px',
     counter: 0,
     isIncrementing: true,
   });
@@ -31,7 +31,7 @@ export const Lines = () => {
         }
       }
 
-      const newDashArray = `${newCounter}px 1px`;
+      const newDashArray = `${newCounter}px 2px`;
 
       setAnimationState({
         ...animationState,
@@ -39,7 +39,7 @@ export const Lines = () => {
         counter: newCounter,
         isIncrementing: newIsIncrementing,
       });
-    }, 20);
+    }, 30);
 
     return () => {
       clearInterval(animationInterval);
@@ -66,7 +66,7 @@ export const Lines = () => {
           stroke='url(#SVGID_1_)'
           strokeLinecap='round'
           strokeMiterlimit='10'
-          strokeWidth='50'
+          strokeWidth='700'
           pathLength='1'
           strokeDashoffset='0px'
           strokeDasharray={animationState.dashArray}

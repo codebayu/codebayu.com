@@ -15,7 +15,7 @@ export const projectStyles = {
   wrap: {
     textAlign: "start",
     flexDir: "column",
-    color: "gray.200"
+    color: "gray.900"
   },
   title: {
     size: "sm",

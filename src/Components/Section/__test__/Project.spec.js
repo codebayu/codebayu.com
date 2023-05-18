@@ -5,7 +5,7 @@ describe('Banner component', () => {
   
   it('should render the heading', () => {
     render(<ProjectSection />)
-    const heading = screen.getByText(/My Project/i);
+    const heading = screen.getByText(/Projects/i);
     expect(heading).toBeInTheDocument();
   });
 

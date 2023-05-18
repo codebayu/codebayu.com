@@ -9,6 +9,7 @@ import { useAos } from './Hooks/useAos';
 
 import Experience from './Components/Section/Experience';
 import Stacks from './Components/Section/Stack';
+import ProjectSection from './Components/Section/Project';
 import Banner from './Components/Banner';
 
 import { Navbar } from './Components/Navbar';
@@ -42,6 +43,7 @@ function App() {
       </Box>
       <Experience />
       <Stacks />
+      <ProjectSection />
       <Maps />
       <Footer />
     </Box>

@@ -4,6 +4,6 @@ export const linesStyles = {
         width: "100%",
         zIndex: 1,
         display: {base: 'none', lg: 'flex'},
-        mt: '5rem'
+        mt: '0'
     }
 }

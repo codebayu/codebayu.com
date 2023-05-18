@@ -1,5 +1,15 @@
 [
     {
+        "title": "CSS Library | by-ui",
+        "description": "This is open source css library which is published on npmjs. So, you can install it to your project. Documentation: https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart",
+        "technology_used": "SASS, gulp, gulp-purgecss",
+        "repository": "https://github.com/Bayusetiawan45/by-ui",
+        "preview_image": [
+            "./project/by-ui/by-ui.png",
+            "./project/by-ui/npmjs.png"
+        ]
+    },
+    {
         "title": "Otodidoc.",
         "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
         "technology_used": "React, Chakra UI, Firebase",
@@ -37,19 +47,6 @@
             "./project/academy/auth.webp",
             "./project/academy/integratexendit.webp",
             "./project/academy/myacademy.webp"
-        ]
-    },
-    {
-        "title": "Smart Wizard",
-        "description": "Smart Wizard is a blockchain-based website created to help NFT creators to deploy smart contracts on blockchain network automatically without coding        ",
-        "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore, Ethers, Solidity, Express JS and Backend integration using Axios",
-        "repository": "Importir.org (Office) Repository",
-        "preview_image": [
-            "./project/smartwizard/1.webp",
-            "./project/smartwizard/2.webp",
-            "./project/smartwizard/3.webp",
-            "./project/smartwizard/4.webp",
-            "./project/smartwizard/5.webp"
         ]
     }
 ]

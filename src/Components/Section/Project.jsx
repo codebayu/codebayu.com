@@ -9,37 +9,29 @@ const ProjectSection = () => {
     <Stack
       as="section"
       overflow="hidden"
-      bg="#353a6b"
-      color="gray.200"
+      bg="gray.300"
+      color="black"
       spacing={5}
-      px={{ base: '1rem', lg: '4rem' }}
+      px={{ base: '1rem', lg: '10rem' }}
       pt="2rem"
       pb="6rem"
-      id="myproject"
+      id="projects"
       position="relative"
       height="100%"
+      data-testid="project-section"
     >
       <Heading
         fontSize={{ base: 30, lg: 60 }}
-        color="gray.200"
+        color="black"
         marginBottom={{ base: 1, lg: 50 }}
       >
-        My Project
+        Projects
       </Heading>
       <Stack spacing={10} position="relative">
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}
       </Stack>
-      <Box
-        width="50rem"
-        height="50rem"
-        background="#3f4479"
-        borderRadius="25rem"
-        position="absolute"
-        right={-500}
-        top={300}
-      />
     </Stack>
   );
 };

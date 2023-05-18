@@ -14,21 +14,21 @@ export default function Project({ project }) {
           {project.title}
         </Heading>
         <Box mb={4}>
-          <Heading sx={sx.title}>
+          <Text sx={sx.title}>
             Description
-          </Heading>
+          </Text>
           <Text>{project.description}</Text>
         </Box>
         <Box mb={4}>
-          <Heading sx={sx.title}>
+          <Text sx={sx.title}>
             Technology Used
-          </Heading>
+          </Text>
           <Text>{project.technology_used}</Text>
         </Box>
         <Box mb={4}>
-          <Heading sx={sx.title}>
+          <Text sx={sx.title}>
             Repository
-          </Heading>
+          </Text>
           <Text>{project.repository}</Text>
         </Box>
       </Flex>

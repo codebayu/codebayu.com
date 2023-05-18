@@ -15,11 +15,11 @@ describe('Framer Motion component', () => {
     expect(experience).toBeInTheDocument()
   });
 
-  // it('should render the My Project link', () => {
-  //   render(<Navbar />)
-  //   const project = screen.getByText(/My Project/i);
-  //   expect(project).toBeInTheDocument()
-  // });
+  it('should render the Projects link', () => {
+    render(<Navbar />)
+    const project = screen.getByText(/Projects/i);
+    expect(project).toBeInTheDocument()
+  });
 
   it('should render the Tech Stack link', () => {
     render(<Navbar />)
