@@ -8,7 +8,7 @@ export const Navbar = () => {
   return (
     <HStack data-testid='navbar' sx={sx.container}>
       <HStack sx={sx.wrap} spacing={{ base: '5', lg: '10' }}>
-        <Link to='home' spy={true} smooth={true} offset={-50} duration={500}>
+        <Link href='/' to='home' spy={true} smooth={true} offset={-50} duration={500}>
           <Text sx={sx.link}>Home</Text>
         </Link>
         <Link
@@ -17,13 +17,14 @@ export const Navbar = () => {
           smooth={true}
           offset={-50}
           duration={500}
+          href='/'
         >
           <Text sx={sx.link}>Experience</Text>
         </Link>
-        <Link to='mystack' spy={true} smooth={true} offset={-50} duration={500}>
+        <Link href='/' to='mystack' spy={true} smooth={true} offset={-50} duration={500}>
           <Text sx={sx.link}>Tech Stack</Text>
         </Link>
-        <Link to='projects' spy={true} smooth={true} offset={-50} duration={500}>
+        <Link href='/' to='projects' spy={true} smooth={true} offset={-50} duration={500}>
           <Text sx={sx.link}>Projects</Text>
         </Link>
       </HStack>

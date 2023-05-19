@@ -29,6 +29,7 @@ export const Icon = (props) => {
         sx={sx.icon}
         icon={icon}
         colorScheme='on-accent'
+        aria-label="Button Label"
       />
     </Tooltip>
   );
