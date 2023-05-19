@@ -68,7 +68,7 @@ const Banner = () => {
       </Flex>
       <Box sx={sx.wrapImage}>
         <Image
-          src='./bayu-no-bg.png'
+          src='./bayu-no-bg.webp'
           width='100%'
           alt='my image'
           filter='grayscale(50%) drop-shadow(4px 4px 6px #fcfcfc)'

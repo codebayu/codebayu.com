@@ -31,6 +31,8 @@ export default function CustomSlider({ image }) {
           <Image
             src={img}
             key={idx}
+            width="100%"
+            height="100%"
             className='keen-slider__slide'
             objectFit='contain'
           />

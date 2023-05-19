@@ -1,6 +1,6 @@
 [
     {
-        "logo" : "./stack/logo512.png",
+        "logo" : "./stack/logo512.webp",
         "label" : "React Js",
         "labelColor" : "#61dafb"
     },
@@ -10,27 +10,27 @@
         "labelColor" : "#000"
     },
     {
-        "logo" : "./stack/vue.png",
+        "logo" : "./stack/vue.webp",
         "label" : "Vue Js",
         "labelColor" : "#3fb984"
     },
     {
-        "logo" : "./stack/nuxt.png",
+        "logo" : "./stack/nuxt.webp",
         "label" : "Nuxt Js",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./stack/jest.png",
+        "logo" : "./stack/jest.webp",
         "label" : "Jest",
         "labelColor" : "#c63d14"
     },
     {
-        "logo" : "./stack/ExpressJS.png",
+        "logo" : "./stack/ExpressJS.webp",
         "label" : "Express Js",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./stack/redux.png",
+        "logo" : "./stack/redux.webp",
         "label" : "Redux",
         "labelColor" : "#764abc"
     },
@@ -40,37 +40,37 @@
         "labelColor" : "#fcca3f"
     },
     {
-        "logo" : "./stack/chakra.png",
+        "logo" : "./stack/chakra.webp",
         "label" : "Chakra UI",
         "labelColor" : "#45c6c0"
     },
     {
-        "logo" : "./stack/logo-mui.png",
+        "logo" : "./stack/logo-mui.webp",
         "label" : "Material UI",
         "labelColor" : "#027FFF"
     },
     {
-        "logo" : "./stack/bootstrap.png",
+        "logo" : "./stack/bootstrap.webp",
         "label" : "Bootstrap",
         "labelColor" : "#7709f6"
     },
     {
-        "logo" : "./stack/javascript.png",
+        "logo" : "./stack/javascript.webp",
         "label" : "JavaScript",
         "labelColor" : "#000"
     },
     {
-        "logo" : "./stack/typescript.png",
+        "logo" : "./stack/typescript.webp",
         "label" : "TypeScript",
         "labelColor" : "#2E78C7"
     },
     {
-        "logo" : "./stack/html.png",
+        "logo" : "./stack/html.webp",
         "label" : "HTML5",
         "labelColor" : "#fc490b"
     },
     {
-        "logo" : "./stack/css.png",
+        "logo" : "./stack/css.webp",
         "label" : "CSS3",
         "labelColor" : "#214ce5"
     }

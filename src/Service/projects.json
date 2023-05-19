@@ -5,8 +5,8 @@
         "technology_used": "SASS, gulp, gulp-purgecss",
         "repository": "https://github.com/Bayusetiawan45/by-ui",
         "preview_image": [
-            "./project/by-ui/by-ui.png",
-            "./project/by-ui/npmjs.png"
+            "./project/by-ui/by-ui.webp",
+            "./project/by-ui/npmjs.webp"
         ]
     },
     {
@@ -15,11 +15,11 @@
         "technology_used": "React, Chakra UI, Firebase",
         "repository": "https://github.com/Bayusetiawan45/academy",
         "preview_image": [
-            "./project/otodidoc/1.png",
-            "./project/otodidoc/2.png",
-            "./project/otodidoc/3.png",
-            "./project/otodidoc/4.png",
-            "./project/otodidoc/5.png"
+            "./project/otodidoc/1.webp",
+            "./project/otodidoc/2.webp",
+            "./project/otodidoc/3.webp",
+            "./project/otodidoc/4.webp",
+            "./project/otodidoc/5.webp"
         ]
     },
     {
@@ -28,10 +28,10 @@
         "technology_used": "React, TypeScript, Material UI, Express JS, JWT, and MongoDB",
         "repository": "https://github.com/Bayusetiawan45/shopping-cart",
         "preview_image": [
-            "./project/shopping/1.png",
-            "./project/shopping/2.png",
-            "./project/shopping/3.png",
-            "./project/shopping/4.png"
+            "./project/shopping/1.webp",
+            "./project/shopping/2.webp",
+            "./project/shopping/3.webp",
+            "./project/shopping/4.webp"
         ]
     },
     {
