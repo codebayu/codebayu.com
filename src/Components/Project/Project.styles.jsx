@@ -10,7 +10,7 @@ export const projectStyles = {
   slider: {
     rounded: "xl",
     mb: { base: 8, lg: 0 },
-    marginRight: 10
+    marginRight: { base: 0, lg: 10 },
   },
   wrap: {
     textAlign: "start",

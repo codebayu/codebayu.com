@@ -40,6 +40,11 @@
         "labelColor" : "#fcca3f"
     },
     {
+        "logo" : "./stack/tailwind.webp",
+        "label" : "Tailwind CSS",
+        "labelColor" : "#01b7d6"
+    },
+    {
         "logo" : "./stack/chakra.webp",
         "label" : "Chakra UI",
         "labelColor" : "#45c6c0"
