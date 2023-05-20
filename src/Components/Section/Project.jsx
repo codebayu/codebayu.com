@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from '@chakra-ui/react';
+import { Heading, Stack } from '@chakra-ui/react';
 import React from 'react';
 import Project from '../Project';
 
@@ -13,7 +13,7 @@ const ProjectSection = () => {
       color="black"
       spacing={5}
       px={{ base: '1rem', lg: '10rem' }}
-      pt="2rem"
+      pt="7rem"
       pb="6rem"
       id="projects"
       position="relative"

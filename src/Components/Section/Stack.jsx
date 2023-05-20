@@ -12,7 +12,8 @@ const Stacks = () => {
       color="gray.100"
       spacing={5}
       px={{ base: '1rem', lg: '10rem' }}
-      py="5rem"
+      pb="5rem"
+      pt="7rem"
       id="mystack"
       data-testid="stacks"
     >

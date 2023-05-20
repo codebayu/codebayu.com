@@ -16,6 +16,7 @@ import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import { Maps } from './Components/Maps';
 import { Lines } from './Components/Lines';
+import { Popup } from './Components/Popup';
 
 function App() {
   usePageViewGA();
@@ -28,19 +29,19 @@ function App() {
   return (
     <Box>
       <Lines />
+      <Navbar />
       <Box
         as='section'
-        height={{ base: '100%' }}
+        height={{ base: '100%', lg: '100vh' }}
         bg='gray.100'
         color='#000'
         px={{ base: '1rem', lg: '10rem' }}
         id='home'
-        py={1}
-        pb={10}
+        py={10}
       >
-        <Navbar />
         <Banner />
       </Box>
+      <Popup />
       <Experience />
       <Stacks />
       <ProjectSection />

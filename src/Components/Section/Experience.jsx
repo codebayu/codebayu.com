@@ -29,7 +29,7 @@ const Experience = () => {
       position="relative"
     >
       <Heading
-        fontSize={{ base: 20, lg: 50 }}
+        fontSize={{ base: 30, lg: 60 }}
         color="gray.800"
         marginBottom={{ base: 1, lg: 50 }}
       >
