@@ -72,6 +72,7 @@ const Banner = () => {
           width='100%'
           alt='my image'
           filter='grayscale(50%) drop-shadow(4px 4px 6px #fcfcfc)'
+          loading='lazy'
         />
         <Box sx={sx.buble} />
       </Box>

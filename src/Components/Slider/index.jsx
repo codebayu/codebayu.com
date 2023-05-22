@@ -19,11 +19,11 @@ export default function CustomSlider({ image }) {
   return (
     <Box
       data-testid='slider'
-      width={{ base: '20rem', lg: '30rem' }}
       alignItems='center'
       rounded='xl'
       display='flex'
       flexDir='column'
+      width={{ base: '20rem', lg: '30rem' }}
     >
       <Box ref={sliderRef} className='keen-slider'>
         {image &&
@@ -32,8 +32,8 @@ export default function CustomSlider({ image }) {
               src={img}
               alt={img}
               key={idx}
-              width='100%'
-              height='100%'
+              sizes='100px'
+              loading='lazy'
               className='keen-slider__slide'
               objectFit='contain'
             />

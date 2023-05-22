@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     viteTsconfigPaths(),
-    viteCompression(),
+    viteCompression({ algorithm: 'brotliCompress' }),
     legacy({
       targets: ['chrome >= 40', 'edge >= 12', 'firefox >= 38', 'ios >= 8'],
     }),
