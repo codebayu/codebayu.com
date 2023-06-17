@@ -9,6 +9,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/analytics": "^1.0.1",
     "@vitejs/plugin-react": "^4.0.0",
     "aos": "^2.3.4",
     "firebase": "^9.8.4",
