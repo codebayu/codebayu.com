@@ -35,6 +35,11 @@
         "labelColor" : "#764abc"
     },
     {
+        "logo" : "./stack/react-query.webp",
+        "label" : "React Query",
+        "labelColor" : "#ff4253"
+    },
+    {
         "logo" : "./stack/firebase.svg",
         "label" : "Firebase",
         "labelColor" : "#fcca3f"

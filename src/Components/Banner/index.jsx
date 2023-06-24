@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaEnvelope,
+  FaBook,
 } from 'react-icons/fa';
 import { Icon } from '../Icon';
 import { bannerStyles as sx} from './Banner.styles';
@@ -36,6 +37,11 @@ const Banner = () => {
       label: 'Whatsapp',
       link: 'https://wa.me/+6282385696549',
       icon: <FaWhatsapp />,
+    },
+    {
+      label: 'Documentation',
+      link: 'https://doc.codebayu.com/',
+      icon: <FaBook />,
     },
   ];
   return (
