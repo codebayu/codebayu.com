@@ -12,7 +12,6 @@ export const navbarStyles = {
   wrap: {
     fontWeight: 'bold',
     fontSize: { base: 12, lg: 16 },
-    color: 'gray.800',
     p: 5,
   },
   link: {

@@ -1,4 +1,4 @@
-import { IconButton, Tooltip } from '@chakra-ui/react';
+import { IconButton, Tooltip, useColorModeValue } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import ReactGA from 'react-ga';
 import { iconStyles as sx } from './Icon.styles';
@@ -6,6 +6,9 @@ import { iconStyles as sx } from './Icon.styles';
 export const Icon = (props) => {
   const navigate = useNavigate();
   const { link, icon, label } = props;
+  const bg = useColorModeValue('#9087b7', 'purple.300');
+  const color = useColorModeValue('#9087b7', 'purple.300');
+
   const onClickIcon = () => {
     ReactGA.event({
       category: 'My Contact',
@@ -21,15 +24,23 @@ export const Icon = (props) => {
       label={label}
       sx={sx.container}
       placement='top'
-      bg='#9087b7'
+      bg={bg}
     >
       <IconButton
         data-testid='icon'
         onClick={onClickIcon}
         sx={sx.icon}
+        color={color}
         icon={icon}
         colorScheme='on-accent'
-        aria-label="Button Label"
+        aria-label='Button Label'
+        _hover={{
+          bg,
+          color: 'white',
+          transform: 'translateY(-3px)',
+          transition: '0.3s',
+          border: 'none',
+        }}
       />
     </Tooltip>
   );

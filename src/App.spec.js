@@ -5,7 +5,6 @@ import Banner from './Components/Banner';
 import Experience from './Components/Section/Experience';
 import Stacks from './Components/Section/Stack';
 import { Footer } from './Components/Footer';
-import { Lines } from './Components/Lines';
 import ProjectSection from './Components/Section/Project';
 
 describe('App component', () => {
@@ -33,11 +32,6 @@ describe('App component', () => {
   it('should render Footer', () => {
     render(<Footer />)
     expect(screen.getByTestId('footer')).toBeInTheDocument()
-  });
-
-  it('should render Lines', () => {
-    render(<Lines />)
-    expect(screen.getByTestId('lines')).toBeInTheDocument()
   });
 
   it('should render Projects', () => {

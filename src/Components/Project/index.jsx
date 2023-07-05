@@ -1,11 +1,12 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import CustomSlider from '../Slider';
 import { projectStyles as sx } from './Project.styles';
 
 export default function Project({ project }) {
+  const color = useColorModeValue('gray.800', 'gray.200');
   return (
-    <Flex sx={sx.container} data-aos="fade-up">
+    <Flex sx={sx.container} color={color} data-aos="fade-up">
       <Flex sx={sx.slider}>
         <CustomSlider image={project.preview_image} />
       </Flex>

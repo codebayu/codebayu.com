@@ -1,4 +1,12 @@
-import { Box, Flex, Heading, HStack, Image, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Flex,
+  Heading,
+  HStack,
+  Image,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import React from 'react';
 import {
   FaGithub,
@@ -9,7 +17,7 @@ import {
   FaBook,
 } from 'react-icons/fa';
 import { Icon } from '../Icon';
-import { bannerStyles as sx} from './Banner.styles';
+import { bannerStyles as sx } from './Banner.styles';
 
 const Banner = () => {
   const Contact = [
@@ -44,8 +52,20 @@ const Banner = () => {
       icon: <FaBook />,
     },
   ];
+  const bg = useColorModeValue('#eeeeee', 'gray.800');
+  const bgBuble = useColorModeValue('gray.400', 'gray.700');
+  const color = useColorModeValue('gray.800', 'gray.200');
+  const bgGradient = useColorModeValue(
+    'linear-gradient(120deg, gray.400 30%, gray.300 100%)',
+    'linear-gradient(120deg, gray.700 30%, gray.800 100%)'
+  );
+  const filter = useColorModeValue(
+    'grayscale(50%) drop-shadow(4px 4px 6px #fcfcfc)',
+    'grayscale(50%) drop-shadow(4px 4px 6px #000)'
+  );
+
   return (
-    <Flex sx={sx.container} data-aos='zoom-in' data-testid="banner">
+    <Flex sx={sx.container} bg={bg} color={color} data-testid='banner'>
       <Flex sx={sx.wrap}>
         <Heading sx={sx.greet}>Hi! I am,</Heading>
         <Flex sx={sx.wrapBio}>
@@ -54,11 +74,11 @@ const Banner = () => {
           <Text sx={sx.summary}>
             As a front-end developer, I specialize in building elegant and
             high-performing web applications using TypeScript and popular
-            frameworks like Next JS and Nuxt JS. With my
-            technical skills, I create solutions that are easy to maintain and
-            scale, always striving to learn and implement new technologies. If
-            you're looking for a developer who can bring your vision to life
-            with style and precision, look no further!
+            frameworks like Next JS and Nuxt JS. With my technical skills, I
+            create solutions that are easy to maintain and scale, always
+            striving to learn and implement new technologies. If you're looking
+            for a developer who can bring your vision to life with style and
+            precision, look no further!
           </Text>
         </Flex>
         <HStack sx={sx.wrapIcon} data-aos='fade-up'>
@@ -72,15 +92,15 @@ const Banner = () => {
           ))}
         </HStack>
       </Flex>
-      <Box sx={sx.wrapImage}>
+      <Box sx={sx.wrapImage} bgGradient={bgGradient}>
         <Image
           src='./bayu-no-bg.webp'
           width='100%'
           alt='my image'
-          filter='grayscale(50%) drop-shadow(4px 4px 6px #fcfcfc)'
+          filter={filter}
           loading='lazy'
         />
-        <Box sx={sx.buble} />
+        <Box sx={sx.buble} bg={bgBuble} />
       </Box>
     </Flex>
   );

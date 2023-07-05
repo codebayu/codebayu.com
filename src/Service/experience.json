@@ -1,37 +1,130 @@
 [
-    {
-        "position" : "Frontend Developer",
-        "periods": "April 2023 - Now",
-        "company": "Harian Kompas",
-        "technology_used": "Nuxt Js, Vue Js, Jest, Tailwind UI, Typescript",
-        "projects": ["E-Paper, Subscription, Checkout Page"],
-        "project_note": "Frontend and Backend Integration",
-        "image": "./logo/logo_Alteacare.svg"
-    },
-    {
-        "position" : "Frontend Developer",
-        "periods": "August 2022 - April 2023",
-        "company": "AlteaCare",
-        "technology_used": "Next Js, React Js, Material UI, Atomic Design, Typescript",
-        "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
-        "project_note": "Frontend and Backend Integration",
-        "image": "./logo/logo_Alteacare.svg"
-    },
-    {
-        "position" : "Fullstack Developer",
-        "periods": "April - August 2022",
-        "company": "importir.org",
-        "technology_used": "React Js, Firebase Deployment, Firestore, Cloud Storage, MySQL, Chakra  UI",
-        "projects": ["Academy (Learning Management System)", "Smart Wizard (Web3/ Blockchain Network)", "Projeq.id (Website for integrating application from finance, accounting, human resourse, and general affair"],
-        "project_note": "Frontend, UI/UX Designer, Backend Integration, Cloud Services",
-        "image": "./logo/importir.webp"
-    },
-    {
-        "position" : "IT Management Trainee",
-        "periods": "February - April 2022",
-        "company": "importir.org",
-        "technology_used": "React Js, Chakra  UI, Bootstrap, Firebase Deployment ",
-        "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
-        "image": "./logo/importir.webp"
-    }
+  {
+    "position": "Frontend Developer",
+    "periods": "April 2023 - Now",
+    "company": "Harian Kompas",
+    "technology_used": [
+      {
+        "logo": "./stack/vue.webp",
+        "label": "Vue Js",
+        "labelColor": "#3fb984"
+      },
+      {
+        "logo": "./stack/nuxt.webp",
+        "label": "Nuxt Js",
+        "labelColor": "#000"
+      },
+      {
+        "logo": "./stack/jest.webp",
+        "label": "Jest",
+        "labelColor": "#c63d14"
+      },
+      {
+        "logo": "./stack/tailwind.webp",
+        "label": "Tailwind CSS",
+        "labelColor": "#01b7d6"
+      },
+      {
+        "logo": "./stack/typescript.webp",
+        "label": "TypeScript",
+        "labelColor": "#2E78C7"
+      }
+    ],
+    "projects": ["E-Paper, Subscription, Checkout Page"],
+    "project_note": "Frontend and Backend Integration",
+    "image": "./logo/logo_Alteacare.svg"
+  },
+  {
+    "position": "Frontend Developer",
+    "periods": "August 2022 - April 2023",
+    "company": "AlteaCare",
+    "technology_used": [
+      {
+        "logo": "./stack/logo512.webp",
+        "label": "React Js",
+        "labelColor": "#61dafb"
+      },
+      {
+        "logo": "./stack/Nextjs-logo.svg",
+        "label": "Next Js",
+        "labelColor": "#000"
+      },
+      {
+        "logo": "./stack/logo-mui.webp",
+        "label": "Material UI",
+        "labelColor": "#027FFF"
+      },
+      {
+        "logo": "./stack/typescript.webp",
+        "label": "TypeScript",
+        "labelColor": "#2E78C7"
+      }
+    ],
+    "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
+    "project_note": "Frontend and Backend Integration",
+    "image": "./logo/logo_Alteacare.svg"
+  },
+  {
+    "position": "Fullstack Developer",
+    "periods": "April - August 2022",
+    "company": "importir.org",
+    "technology_used": [
+      {
+        "logo": "./stack/logo512.webp",
+        "label": "React Js",
+        "labelColor": "#61dafb"
+      },
+      {
+        "logo": "./stack/ExpressJS.webp",
+        "label": "Express Js",
+        "labelColor": "#000"
+      },
+      {
+        "logo": "./stack/firebase.svg",
+        "label": "Firebase",
+        "labelColor": "#fcca3f"
+      },
+      {
+        "logo": "./stack/chakra.webp",
+        "label": "Chakra UI",
+        "labelColor": "#45c6c0"
+      }
+    ],
+    "projects": [
+      "Academy (Learning Management System)",
+      "Smart Wizard (Web3/ Blockchain Network)",
+      "Projeq.id (Website for integrating application from finance, accounting, human resourse, and general affair"
+    ],
+    "project_note": "Frontend, UI/UX Designer, Backend Integration, Cloud Services",
+    "image": "./logo/importir.webp"
+  },
+  {
+    "position": "IT Management Trainee",
+    "periods": "February - April 2022",
+    "company": "importir.org",
+    "technology_used": [
+      {
+        "logo": "./stack/logo512.webp",
+        "label": "React Js",
+        "labelColor": "#61dafb"
+      },
+      {
+        "logo": "./stack/ExpressJS.webp",
+        "label": "Express Js",
+        "labelColor": "#000"
+      },
+      {
+        "logo": "./stack/firebase.svg",
+        "label": "Firebase",
+        "labelColor": "#fcca3f"
+      },
+      {
+        "logo": "./stack/chakra.webp",
+        "label": "Chakra UI",
+        "labelColor": "#45c6c0"
+      }
+    ],
+    "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
+    "image": "./logo/importir.webp"
+  }
 ]

@@ -7,7 +7,28 @@ jest.mock('../../../Service/experience.json', () => [
     position: 'Front-end Developer',
     company: 'ABC Company',
     periods: '2020 - Present',
-    technology_used: 'React, TypeScript',
+    "technology_used": [
+      {
+        "logo": "./stack/logo512.webp",
+        "label": "React Js",
+        "labelColor": "#61dafb"
+      },
+      {
+        "logo": "./stack/ExpressJS.webp",
+        "label": "Express Js",
+        "labelColor": "#000"
+      },
+      {
+        "logo": "./stack/firebase.svg",
+        "label": "Firebase",
+        "labelColor": "#fcca3f"
+      },
+      {
+        "logo": "./stack/chakra.webp",
+        "label": "Chakra UI",
+        "labelColor": "#45c6c0"
+      }
+    ],
     project_note: 'Some Project Note',
     projects: ['Project 1', 'Project 2'],
   },
@@ -23,10 +44,8 @@ describe('Banner component', () => {
   it('should render correct experience information', () => {
     render(<Experience />);
     experience.forEach((item) => {
-      expect(screen.getByText(item.position)).toBeInTheDocument();
-      expect(screen.getByText(item.periods)).toBeInTheDocument();
-      expect(screen.getByText(`${item.company} |`)).toBeInTheDocument();
-      expect(screen.getByText(item.technology_used)).toBeInTheDocument();
+      expect(screen.getByText(`${item.position} at ${item.company}`)).toBeInTheDocument();
+      expect(screen.getByText(`| ${item.periods}`)).toBeInTheDocument();
       expect(
         screen.getByText(`Project (${item.project_note})`)
       ).toBeInTheDocument();

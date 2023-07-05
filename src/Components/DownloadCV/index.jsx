@@ -1,4 +1,4 @@
-import { Button, Flex } from '@chakra-ui/react';
+import { Button, Flex, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ReactGA from 'react-ga';
@@ -6,6 +6,7 @@ import { downloadCVStyles as sx } from './DownloadCV.styles';
 
 const DownloadCV = () => {
   const navigate = useNavigate();
+  const color = useColorModeValue('gray.800', 'gray.100');
   const onDownloadCV = () => {
     ReactGA.event({
       category: 'Download CV',
@@ -17,7 +18,7 @@ const DownloadCV = () => {
   }
   return (
     <Flex data-testid="download-cv">
-      <Button sx={sx.button} onClick={onDownloadCV}>
+      <Button sx={sx.button} color={color} onClick={onDownloadCV}>
         Download My CV
       </Button>
     </Flex>

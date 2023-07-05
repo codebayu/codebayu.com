@@ -1,11 +1,16 @@
 import { Link } from 'react-scroll';
-import { Text, HStack } from '@chakra-ui/react';
+import { Text, HStack, useColorMode, Flex, useColorModeValue, IconButton } from '@chakra-ui/react';
 import DownloadCV from '../DownloadCV';
 import { navbarStyles as sx } from './Navbar.styles';
 import { useState } from 'react';
+import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 
 export const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
+  const { colorMode, toggleColorMode } = useColorMode();
+
+  const bg = useColorModeValue('white', 'gray.800');
+  const color = useColorModeValue('gray.800', 'gray.100');
 
   const changeBackground = () => {
     if (window.scrollY >= 20) {
@@ -22,7 +27,12 @@ export const Navbar = () => {
     audio.play();
   };
   return (
-    <HStack data-testid='navbar' sx={sx.container} background={isScroll ? 'white' : 'transparent'}>
+    <HStack
+      data-testid='navbar'
+      sx={sx.container}
+      color={color}
+      background={isScroll ? bg : 'transparent'}
+    >
       <HStack sx={sx.wrap} spacing={{ base: '5', lg: '10' }}>
         <Link
           onClick={onLinkClicked}
@@ -70,7 +80,12 @@ export const Navbar = () => {
         </Link>
       </HStack>
 
-      <DownloadCV />
+      <Flex alignItems='center'>
+        <DownloadCV />
+        <IconButton onClick={toggleColorMode} bg="transparent">
+          {colorMode === 'light' ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
+        </IconButton>
+      </Flex>
     </HStack>
   );
 };

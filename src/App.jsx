@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Box } from '@chakra-ui/react';
+import { Box, useColorModeValue } from '@chakra-ui/react';
 
 import 'aos/dist/aos.css';
 import ReactGA from 'react-ga';
@@ -15,12 +15,14 @@ import Banner from './Components/Banner';
 import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import { Maps } from './Components/Maps';
-import { Lines } from './Components/Lines';
 import { Popup } from './Components/Popup';
 
 function App() {
   usePageViewGA();
   useAos();
+
+  const bg = useColorModeValue('gray.100', 'gray.900')
+  const color = useColorModeValue('black', 'white')
 
   useEffect(() => {
     ReactGA.initialize('G-HX2V9VBWRR');
@@ -28,13 +30,12 @@ function App() {
 
   return (
     <Box>
-      <Lines />
       <Navbar />
       <Box
         as='section'
         height={{ base: '100%', lg: '100vh' }}
-        bg='gray.100'
-        color='#000'
+        bg={bg}
+        color={color}
         px={{ base: '1rem', lg: '10rem' }}
         id='home'
         py={10}
