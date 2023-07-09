@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ChakraProvider>
-        <ConfigCatProvider sdkKey={sdkKey}>
+        <ConfigCatProvider sdkKey='9H3bCOyAakyOiOKFmVUMtg/QBwHDDPTfECRcCGIg4JTOw'>
           <ColorModeScript
             initialColorMode={defaultTheme.config.initialColorMode}
           />
