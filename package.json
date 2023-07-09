@@ -12,6 +12,7 @@
     "@vercel/analytics": "^1.0.1",
     "@vitejs/plugin-react": "^4.0.0",
     "aos": "^2.3.4",
+    "configcat-react": "^3.0.1",
     "firebase": "^9.8.4",
     "framer-motion": "^6.3.16",
     "keen-slider": "^6.8.5",

@@ -16,13 +16,26 @@ import { Navbar } from './Components/Navbar';
 import { Footer } from './Components/Footer';
 import { Maps } from './Components/Maps';
 import { Popup } from './Components/Popup';
+import { useFeatureFlag } from 'configcat-react';
 
 function App() {
   usePageViewGA();
   useAos();
 
-  const bg = useColorModeValue('gray.100', 'gray.900')
-  const color = useColorModeValue('black', 'white')
+  const { value: featureBannerValue } = useFeatureFlag('featureBanner', false);
+  const { value: featureExperienceValue } = useFeatureFlag(
+    'featureExperience',
+    false
+  );
+  const { value: featureStackValue } = useFeatureFlag('featureStack', false);
+  const { value: featureProjectsValue } = useFeatureFlag(
+    'featureProjects',
+    false
+  );
+  const { value: featureMapsValue } = useFeatureFlag('featureMaps', false);
+
+  const bg = useColorModeValue('gray.100', 'gray.900');
+  const color = useColorModeValue('black', 'white');
 
   useEffect(() => {
     ReactGA.initialize('G-HX2V9VBWRR');
@@ -31,22 +44,24 @@ function App() {
   return (
     <Box>
       <Navbar />
-      <Box
-        as='section'
-        height={{ base: '100%', lg: '100vh' }}
-        bg={bg}
-        color={color}
-        px={{ base: '1rem', lg: '10rem' }}
-        id='home'
-        py={10}
-      >
-        <Banner />
-      </Box>
+      {featureBannerValue && (
+        <Box
+          as='section'
+          height={{ base: '100%', lg: '100vh' }}
+          bg={bg}
+          color={color}
+          px={{ base: '1rem', lg: '10rem' }}
+          id='home'
+          py={10}
+        >
+          <Banner />
+        </Box>
+      )}
       <Popup />
-      <Experience />
-      <Stacks />
-      <ProjectSection />
-      <Maps />
+      {featureExperienceValue && <Experience />}
+      {featureStackValue && <Stacks />}
+      {featureProjectsValue && <ProjectSection />}
+      {featureMapsValue && <Maps />}
       <Footer />
     </Box>
   );

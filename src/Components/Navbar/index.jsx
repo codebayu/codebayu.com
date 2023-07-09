@@ -1,13 +1,29 @@
 import { Link } from 'react-scroll';
-import { Text, HStack, useColorMode, Flex, useColorModeValue, IconButton } from '@chakra-ui/react';
+import {
+  Text,
+  HStack,
+  useColorMode,
+  Flex,
+  useColorModeValue,
+  IconButton,
+} from '@chakra-ui/react';
 import DownloadCV from '../DownloadCV';
 import { navbarStyles as sx } from './Navbar.styles';
 import { useState } from 'react';
-import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
+import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
+import { useFeatureFlag } from 'configcat-react';
 
 export const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
+  const { value: featureDownloadCvValue } = useFeatureFlag(
+    'featureDownloadCv',
+    false
+  );
+  const { value: featureDarkModeValue } = useFeatureFlag(
+    'featureDarkMode',
+    false
+  );
 
   const bg = useColorModeValue('white', 'gray.800');
   const color = useColorModeValue('gray.800', 'gray.100');
@@ -81,10 +97,16 @@ export const Navbar = () => {
       </HStack>
 
       <Flex alignItems='center'>
-        <DownloadCV />
-        <IconButton onClick={toggleColorMode} bg="transparent">
-          {colorMode === 'light' ? <MdOutlineDarkMode /> : <MdOutlineLightMode />}
-        </IconButton>
+        {featureDownloadCvValue && <DownloadCV />}
+        {featureDarkModeValue && (
+          <IconButton onClick={toggleColorMode} bg='transparent'>
+            {colorMode === 'light' ? (
+              <MdOutlineDarkMode />
+            ) : (
+              <MdOutlineLightMode />
+            )}
+          </IconButton>
+        )}
       </Flex>
     </HStack>
   );

@@ -15,5 +15,5 @@ export default defineConfig({
     legacy({
       targets: ['chrome >= 40', 'edge >= 12', 'firefox >= 38', 'ios >= 8'],
     }),
-  ]
+  ],
 })
