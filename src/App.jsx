@@ -61,7 +61,7 @@ function App() {
           color={color}
           px={{ base: "1rem", lg: "10rem" }}
           id="home"
-          py={10}
+          py={{ base: 5, lg: 10 }}
         >
           <Banner />
         </Box>
