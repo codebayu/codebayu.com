@@ -1,6 +1,6 @@
-import { Box, keyframes } from '@chakra-ui/react';
-import { motion } from 'framer-motion';
-import { framerMotionStyes as sx } from './FramerMotion.styles';
+import { Box, keyframes } from "@chakra-ui/react";
+import { motion } from "framer-motion";
+import { framerMotionStyes as sx } from "./FramerMotion.styles";
 
 export default function FramerMotion() {
   const animationKeyframes = keyframes`
@@ -17,7 +17,7 @@ export default function FramerMotion() {
       sx={sx.container}
       animation={animation}
       as={motion.div}
-      data-testid='framer-motion'
+      data-testid="framer-motion"
     />
   );
 }

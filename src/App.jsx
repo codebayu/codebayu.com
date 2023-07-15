@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box, Spinner, useColorModeValue } from "@chakra-ui/react";
+import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
 
 import "aos/dist/aos.css";
 import ReactGA from "react-ga";
@@ -45,7 +45,19 @@ function App() {
     ReactGA.initialize("G-HX2V9VBWRR");
   }, []);
 
-  if (loading) return <FramerMotion />;
+  if (loading)
+    return (
+      <Flex
+        h="100vh"
+        flexDir="column"
+        alignItems="center"
+        gap={5}
+        justifyContent="center"
+      >
+        <FramerMotion />
+        <Text fontWeight="semibold">Currently making magic</Text>
+      </Flex>
+    );
 
   return (
     <Box>
