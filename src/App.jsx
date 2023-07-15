@@ -1,57 +1,66 @@
-import React, { useEffect } from 'react';
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import React, { useEffect } from "react";
+import { Box, Spinner, useColorModeValue } from "@chakra-ui/react";
 
-import 'aos/dist/aos.css';
-import ReactGA from 'react-ga';
+import "aos/dist/aos.css";
+import ReactGA from "react-ga";
 
-import { usePageViewGA } from './Hooks/usePageViewHooks';
-import { useAos } from './Hooks/useAos';
+import { usePageViewGA } from "./Hooks/usePageViewHooks";
+import { useAos } from "./Hooks/useAos";
 
-import Experience from './Components/Section/Experience';
-import Stacks from './Components/Section/Stack';
-import ProjectSection from './Components/Section/Project';
-import Banner from './Components/Banner';
+import Experience from "./Components/Section/Experience";
+import Stacks from "./Components/Section/Stack";
+import ProjectSection from "./Components/Section/Project";
+import Banner from "./Components/Banner";
 
-import { Navbar } from './Components/Navbar';
-import { Footer } from './Components/Footer';
-import { Maps } from './Components/Maps';
-import { Popup } from './Components/Popup';
-import { useFeatureFlag } from 'configcat-react';
+import { Navbar } from "./Components/Navbar";
+import { Footer } from "./Components/Footer";
+import { Maps } from "./Components/Maps";
+import { Popup } from "./Components/Popup";
+import { useFeatureFlag } from "configcat-react";
+import configCatValue from "./Service/configcat.json";
+import FramerMotion from "./Components/FramerMotion";
 
 function App() {
   usePageViewGA();
   useAos();
 
-  const { value: featureBannerValue } = useFeatureFlag('featureBanner', false);
-  const { value: featureExperienceValue } = useFeatureFlag(
-    'featureExperience',
-    false
+  const { value, loading } = useFeatureFlag(
+    "flagsPortfolio",
+    JSON.stringify(configCatValue)
   );
-  const { value: featureStackValue } = useFeatureFlag('featureStack', false);
-  const { value: featureProjectsValue } = useFeatureFlag(
-    'featureProjects',
-    false
-  );
-  const { value: featureMapsValue } = useFeatureFlag('featureMaps', false);
+  const parseValue = JSON.parse(value);
+  const featureBannerValue = parseValue[0].value;
+  const featureExperienceValue = parseValue[1].value;
+  const featureProjectsValue = parseValue[2].value;
+  const featureMapsValue = parseValue[3].value;
+  const featureStackValue = parseValue[4].value;
+  const featureDownloadCvValue = parseValue[5].value;
+  const featureDarkModeValue = parseValue[6].value;
+  const featureFooterValue = parseValue[7].value;
 
-  const bg = useColorModeValue('gray.100', 'gray.900');
-  const color = useColorModeValue('black', 'white');
+  const bg = useColorModeValue("gray.100", "gray.900");
+  const color = useColorModeValue("black", "white");
 
   useEffect(() => {
-    ReactGA.initialize('G-HX2V9VBWRR');
+    ReactGA.initialize("G-HX2V9VBWRR");
   }, []);
+
+  if (loading) return <FramerMotion />;
 
   return (
     <Box>
-      <Navbar />
+      <Navbar
+        featureDownloadCvValue={featureDownloadCvValue}
+        featureDarkModeValue={featureDarkModeValue}
+      />
       {featureBannerValue && (
         <Box
-          as='section'
-          height={{ base: '100%', lg: '100vh' }}
+          as="section"
+          height={{ base: "100%", lg: "100vh" }}
           bg={bg}
           color={color}
-          px={{ base: '1rem', lg: '10rem' }}
-          id='home'
+          px={{ base: "1rem", lg: "10rem" }}
+          id="home"
           py={10}
         >
           <Banner />
@@ -62,7 +71,7 @@ function App() {
       {featureStackValue && <Stacks />}
       {featureProjectsValue && <ProjectSection />}
       {featureMapsValue && <Maps />}
-      <Footer />
+      {featureFooterValue && <Footer />}
     </Box>
   );
 }

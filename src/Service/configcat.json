@@ -1,0 +1,34 @@
+[
+    {
+      "id": "featureBanner",
+      "value": true
+    },
+    {
+      "id": "featureExperience",
+      "value": true
+    },
+    {
+      "id": "featureProjects",
+      "value": true
+    },
+    {
+      "id": "featureMaps",
+      "value": true
+    },
+    {
+      "id": "featureStack",
+      "value": true
+    },
+    {
+      "id": "featureDownloadCv",
+      "value": true
+    },
+    {
+      "id": "featureDarkMode",
+      "value": true
+    },
+    {
+      "id": "featureFooter",
+      "value": true
+    }
+  ]

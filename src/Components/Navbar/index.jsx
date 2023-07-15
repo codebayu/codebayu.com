@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link } from "react-scroll";
 import {
   Text,
   HStack,
@@ -6,27 +6,18 @@ import {
   Flex,
   useColorModeValue,
   IconButton,
-} from '@chakra-ui/react';
-import DownloadCV from '../DownloadCV';
-import { navbarStyles as sx } from './Navbar.styles';
-import { useState } from 'react';
-import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
-import { useFeatureFlag } from 'configcat-react';
+} from "@chakra-ui/react";
+import DownloadCV from "../DownloadCV";
+import { navbarStyles as sx } from "./Navbar.styles";
+import { useState } from "react";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
-export const Navbar = () => {
+export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
   const [isScroll, setIsScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
-  const { value: featureDownloadCvValue } = useFeatureFlag(
-    'featureDownloadCv',
-    false
-  );
-  const { value: featureDarkModeValue } = useFeatureFlag(
-    'featureDarkMode',
-    false
-  );
 
-  const bg = useColorModeValue('white', 'gray.800');
-  const color = useColorModeValue('gray.800', 'gray.100');
+  const bg = useColorModeValue("white", "gray.800");
+  const color = useColorModeValue("gray.800", "gray.100");
 
   const changeBackground = () => {
     if (window.scrollY >= 20) {
@@ -36,24 +27,24 @@ export const Navbar = () => {
     }
   };
 
-  window.addEventListener('scroll', changeBackground);
+  window.addEventListener("scroll", changeBackground);
 
   const onLinkClicked = () => {
-    const audio = new Audio('/audio/click.wav');
+    const audio = new Audio("/audio/click.wav");
     audio.play();
   };
   return (
     <HStack
-      data-testid='navbar'
+      data-testid="navbar"
       sx={sx.container}
       color={color}
-      background={isScroll ? bg : 'transparent'}
+      background={isScroll ? bg : "transparent"}
     >
-      <HStack sx={sx.wrap} spacing={{ base: '5', lg: '10' }}>
+      <HStack sx={sx.wrap} spacing={{ base: "5", lg: "10" }}>
         <Link
           onClick={onLinkClicked}
-          href='/'
-          to='home'
+          href="/"
+          to="home"
           spy={true}
           smooth={true}
           offset={0}
@@ -63,19 +54,19 @@ export const Navbar = () => {
         </Link>
         <Link
           onClick={onLinkClicked}
-          to='experience'
+          to="experience"
           spy={true}
           smooth={true}
           offset={0}
           duration={500}
-          href='/'
+          href="/"
         >
           <Text sx={sx.link}>Experience</Text>
         </Link>
         <Link
           onClick={onLinkClicked}
-          href='/'
-          to='mystack'
+          href="/"
+          to="mystack"
           spy={true}
           smooth={true}
           offset={0}
@@ -85,8 +76,8 @@ export const Navbar = () => {
         </Link>
         <Link
           onClick={onLinkClicked}
-          href='/'
-          to='projects'
+          href="/"
+          to="projects"
           spy={true}
           smooth={true}
           offset={0}
@@ -96,11 +87,11 @@ export const Navbar = () => {
         </Link>
       </HStack>
 
-      <Flex alignItems='center'>
+      <Flex alignItems="center">
         {featureDownloadCvValue && <DownloadCV />}
         {featureDarkModeValue && (
-          <IconButton onClick={toggleColorMode} bg='transparent'>
-            {colorMode === 'light' ? (
+          <IconButton onClick={toggleColorMode} bg="transparent">
+            {colorMode === "light" ? (
               <MdOutlineDarkMode />
             ) : (
               <MdOutlineLightMode />
