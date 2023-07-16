@@ -19,6 +19,7 @@ import { Popup } from "./Components/Popup";
 import { useFeatureFlag } from "configcat-react";
 import configCatValue from "./Service/configcat.json";
 import FramerMotion from "./Components/FramerMotion";
+import { Info } from "./Components/Section/Info";
 
 function App() {
   usePageViewGA();
@@ -37,6 +38,7 @@ function App() {
   const featureDownloadCvValue = parseValue[5].value;
   const featureDarkModeValue = parseValue[6].value;
   const featureFooterValue = parseValue[7].value;
+  const featureInfoValue = parseValue[7].value;
 
   const bg = useColorModeValue("gray.100", "gray.900");
   const color = useColorModeValue("black", "white");
@@ -73,7 +75,7 @@ function App() {
           color={color}
           px={{ base: "1rem", lg: "10rem" }}
           id="home"
-          py={{ base: 5, lg: 10 }}
+          py={{ base: 5, lg: "5rem" }}
         >
           <Banner />
         </Box>
@@ -82,6 +84,7 @@ function App() {
       {featureExperienceValue && <Experience />}
       {featureStackValue && <Stacks />}
       {featureProjectsValue && <ProjectSection />}
+      {featureInfoValue && <Info />}
       {featureMapsValue && <Maps />}
       {featureFooterValue && <Footer />}
     </Box>

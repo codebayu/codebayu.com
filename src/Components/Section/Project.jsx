@@ -1,12 +1,12 @@
-import { Heading, Stack, useColorModeValue } from '@chakra-ui/react';
-import React from 'react';
-import Project from '../Project';
+import { Heading, Stack, useColorModeValue } from "@chakra-ui/react";
+import React from "react";
+import Project from "../Project";
 
-import projects from '../../Service/projects.json';
+import projects from "../../Service/projects.json";
 
 const ProjectSection = () => {
-  const bg = useColorModeValue('#eeeeee', 'gray.800');
-  const color = useColorModeValue('gray.800', 'gray.200');
+  const bg = useColorModeValue("#eeeeee", "gray.800");
+  const color = useColorModeValue("gray.800", "gray.200");
   return (
     <Stack
       as="section"
@@ -14,9 +14,8 @@ const ProjectSection = () => {
       bg={bg}
       color={color}
       spacing={5}
-      px={{ base: '1rem', lg: '10rem' }}
-      pt="7rem"
-      pb="6rem"
+      px={{ base: "1rem", lg: "10rem" }}
+      py={{ base: "2rem", lg: "7rem" }}
       id="projects"
       position="relative"
       height="100%"

@@ -1,34 +1,38 @@
 [
     {
       "id": "featureBanner",
-      "value": true
+      "value": false
     },
     {
       "id": "featureExperience",
-      "value": true
+      "value": false
     },
     {
       "id": "featureProjects",
-      "value": true
+      "value": false
     },
     {
       "id": "featureMaps",
-      "value": true
+      "value": false
     },
     {
       "id": "featureStack",
-      "value": true
+      "value": false
     },
     {
       "id": "featureDownloadCv",
-      "value": true
+      "value": false
     },
     {
       "id": "featureDarkMode",
-      "value": true
+      "value": false
     },
     {
       "id": "featureFooter",
-      "value": true
+      "value": false
+    },
+    {
+      "id": "featureInfo",
+      "value": false
     }
   ]
