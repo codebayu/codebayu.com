@@ -65,7 +65,7 @@ const Banner = () => {
   );
 
   return (
-    <Flex sx={sx.container} bg={bg} color={color} data-testid='banner'>
+    <Flex sx={sx.container} bg={bg} color={color} data-testid="banner">
       <Flex sx={sx.wrap}>
         <Heading sx={sx.greet}>Hi! I am,</Heading>
         <Flex sx={sx.wrapBio}>
@@ -81,7 +81,7 @@ const Banner = () => {
             precision, look no further!
           </Text>
         </Flex>
-        <HStack sx={sx.wrapIcon} data-aos='fade-up'>
+        <HStack sx={sx.wrapIcon} data-aos="fade-up">
           {Contact.map((item, idx) => (
             <Icon
               key={idx}
@@ -94,11 +94,12 @@ const Banner = () => {
       </Flex>
       <Box sx={sx.wrapImage} bgGradient={bgGradient}>
         <Image
-          src='./bayu-no-bg.webp'
-          width='100%'
-          alt='my image'
+          src="./bayu-no-bg.webp"
+          width="100%"
+          height="100%"
+          alt="my image"
           filter={filter}
-          loading='lazy'
+          loading="eager"
         />
         <Box sx={sx.buble} bg={bgBuble} />
       </Box>

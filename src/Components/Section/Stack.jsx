@@ -3,23 +3,22 @@ import {
   SimpleGrid,
   Stack,
   useColorModeValue,
-} from "@chakra-ui/react";
-import React from "react";
-import { Stack as MyStack } from "../Stack";
-import stacks from "../../Service/stack.json";
+} from '@chakra-ui/react';
+import React from 'react';
+import { Stack as MyStack } from '../Stack';
+import stacks from '../../Service/stack.json';
 
 const Stacks = () => {
-  const bg = useColorModeValue("gray.100", "gray.900");
-  const color = useColorModeValue("gray.800", "gray.200");
+  const bg = useColorModeValue('gray.100', 'gray.900');
+  const color = useColorModeValue('gray.800', 'gray.200');
   return (
     <Stack
       as="section"
-      minHeight="70vh"
       bg={bg}
       color={color}
       spacing={5}
-      px={{ base: "1rem", lg: "10rem" }}
-      py={{ base: "2rem", lg: "7rem" }}
+      px={{ base: '1rem', lg: '10rem' }}
+      py={{ base: '2rem', lg: '7rem' }}
       id="mystack"
       data-testid="stacks"
     >

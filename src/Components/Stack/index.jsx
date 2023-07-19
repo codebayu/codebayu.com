@@ -1,12 +1,20 @@
-import { Image, Heading, Flex } from '@chakra-ui/react';
+import { Image, Heading, Flex, Box } from '@chakra-ui/react';
 import { stackStyles as sx } from './Stack.styles';
 
 export const Stack = (props) => {
   const { label, src, labelColor } = props;
   return (
     <Flex sx={sx.container} data-aos="zoom-in">
-      <Image height="2rem" src={src} alt={label} loading='lazy' />
-      <Heading size="sm" sx={{...sx.label, color: labelColor}}>
+      <Box height="2rem">
+        <Image
+          height="100%"
+          width="100%"
+          src={src}
+          alt={label}
+          loading="lazy"
+        />
+      </Box>
+      <Heading size="sm" sx={{ ...sx.label, color: labelColor }}>
         {label}
       </Heading>
     </Flex>

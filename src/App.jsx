@@ -1,32 +1,32 @@
-import React, { useEffect } from "react";
-import { Box, Flex, Text, useColorModeValue } from "@chakra-ui/react";
+import React, { useEffect } from 'react';
+import { Box, Flex, Text, useColorModeValue } from '@chakra-ui/react';
 
-import "aos/dist/aos.css";
-import ReactGA from "react-ga";
+import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
 
-import { usePageViewGA } from "./Hooks/usePageViewHooks";
-import { useAos } from "./Hooks/useAos";
+import { usePageViewGA } from './Hooks/usePageViewHooks';
+import { useAos } from './Hooks/useAos';
 
-import Experience from "./Components/Section/Experience";
-import Stacks from "./Components/Section/Stack";
-import ProjectSection from "./Components/Section/Project";
-import Banner from "./Components/Banner";
+import Experience from './Components/Section/Experience';
+import Stacks from './Components/Section/Stack';
+import ProjectSection from './Components/Section/Project';
+import Banner from './Components/Banner';
 
-import { Navbar } from "./Components/Navbar";
-import { Footer } from "./Components/Footer";
-import { Maps } from "./Components/Maps";
-import { Popup } from "./Components/Popup";
-import { useFeatureFlag } from "configcat-react";
-import configCatValue from "./Service/configcat.json";
-import FramerMotion from "./Components/FramerMotion";
-import { Info } from "./Components/Section/Info";
+import { Navbar } from './Components/Navbar';
+import { Footer } from './Components/Footer';
+import { Maps } from './Components/Maps';
+import { Popup } from './Components/Popup';
+import { useFeatureFlag } from 'configcat-react';
+import configCatValue from './Service/configcat.json';
+import FramerMotion from './Components/FramerMotion';
+import { Info } from './Components/Section/Info';
 
 function App() {
   usePageViewGA();
   useAos();
 
   const { value, loading } = useFeatureFlag(
-    "flagsPortfolio",
+    'flagsPortfolio',
     JSON.stringify(configCatValue)
   );
   const parseValue = JSON.parse(value);
@@ -40,11 +40,11 @@ function App() {
   const featureFooterValue = parseValue[7].value;
   const featureInfoValue = parseValue[7].value;
 
-  const bg = useColorModeValue("gray.100", "gray.900");
-  const color = useColorModeValue("black", "white");
+  const bg = useColorModeValue('gray.100', 'gray.900');
+  const color = useColorModeValue('black', 'white');
 
   useEffect(() => {
-    ReactGA.initialize("G-HX2V9VBWRR");
+    ReactGA.initialize('G-HX2V9VBWRR');
   }, []);
 
   if (loading)
@@ -70,12 +70,12 @@ function App() {
       {featureBannerValue && (
         <Box
           as="section"
-          height={{ base: "100%", lg: "100vh" }}
+          height={{ base: '100%', lg: '100vh' }}
           bg={bg}
           color={color}
-          px={{ base: "1rem", lg: "10rem" }}
+          px={{ base: '1rem', lg: '10rem' }}
           id="home"
-          py={{ base: 5, lg: "5rem" }}
+          py={{ base: 5, lg: '5rem' }}
         >
           <Banner />
         </Box>

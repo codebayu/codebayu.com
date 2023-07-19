@@ -12,13 +12,13 @@ const DownloadCV = () => {
       category: 'Download CV',
       action: 'test action',
       label: 'test label',
-      value: 'success'
-    })
+      value: 'success',
+    });
     navigate(window.open('./Bayu-Setiawan-Frontend-Developer-CV.pdf'));
-  }
+  };
   return (
     <Flex data-testid="download-cv">
-      <Button sx={sx.button} color={color} onClick={onDownloadCV}>
+      <Button role="button" sx={sx.button} color={color} onClick={onDownloadCV}>
         Download My CV
       </Button>
     </Flex>

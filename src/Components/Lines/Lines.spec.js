@@ -2,7 +2,6 @@ import { Lines } from '.';
 import { render, screen } from '../../setupTests';
 
 describe('Lines component', () => {
-  
   it('should render Lines', () => {
     render(<Lines />);
     expect(screen.getByTestId('lines')).toBeInTheDocument();
@@ -11,6 +10,11 @@ describe('Lines component', () => {
   it('should render svg', () => {
     render(<Lines />);
     expect(screen.getByTestId('svg')).toBeInTheDocument();
+  });
+
+  it('should render path', () => {
+    render(<Lines />);
+    expect(screen.getByTestId('path')).toBeInTheDocument();
   });
 
   it('renders without throwing an error', () => {

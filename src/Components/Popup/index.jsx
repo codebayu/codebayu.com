@@ -44,13 +44,18 @@ export const Popup = () => {
 
   return (
     <Flex
-      data-aos='zoom-in-down'
+      data-aos="zoom-in-down"
       display={isOpen ? 'flex' : 'none'}
       background={message.color}
       data-testid="popup"
       sx={sx.container}
     >
-      <Avatar data-testid="avatar" src='/bayu-no-bg.webp' fontWeight='semibold' />
+      <Avatar
+        data-testid="avatar"
+        src="/bayu-no-bg.webp"
+        name="avatar"
+        fontWeight="semibold"
+      />
       <Box data-testid="message">
         <Text>{message.message}</Text>
         <Text>Welcome to my website.</Text>

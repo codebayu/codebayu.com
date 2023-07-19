@@ -1,9 +1,9 @@
-import { Flex, Heading, useColorModeValue } from "@chakra-ui/react";
-import { mapsStyles as sx } from "./Maps.styles";
+import { Flex, Heading, useColorModeValue } from '@chakra-ui/react';
+import { mapsStyles as sx } from './Maps.styles';
 
 export const Maps = () => {
-  const bg = useColorModeValue("#eeeeee", "gray.800");
-  const color = useColorModeValue("gray.800", "gray.200");
+  const bg = useColorModeValue('#eeeeee', 'gray.800');
+  const color = useColorModeValue('gray.800', 'gray.200');
   return (
     <Flex as="section" bg={bg} color={color} sx={sx.container} id="maps">
       <Heading fontSize={{ base: 20, lg: 45 }} fontWeight="semibold">

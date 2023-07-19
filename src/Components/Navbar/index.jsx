@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from 'react-scroll';
 import {
   Text,
   HStack,
@@ -6,18 +6,18 @@ import {
   Flex,
   useColorModeValue,
   IconButton,
-} from "@chakra-ui/react";
-import DownloadCV from "../DownloadCV";
-import { navbarStyles as sx } from "./Navbar.styles";
-import { useState } from "react";
-import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
+} from '@chakra-ui/react';
+import DownloadCV from '../DownloadCV';
+import { navbarStyles as sx } from './Navbar.styles';
+import { useState } from 'react';
+import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
 
 export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
   const [isScroll, setIsScroll] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const bg = useColorModeValue("white", "gray.800");
-  const color = useColorModeValue("gray.800", "gray.100");
+  const bg = useColorModeValue('white', 'gray.800');
+  const color = useColorModeValue('gray.800', 'gray.100');
 
   const changeBackground = () => {
     if (window.scrollY >= 20) {
@@ -27,10 +27,10 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
     }
   };
 
-  window.addEventListener("scroll", changeBackground);
+  window.addEventListener('scroll', changeBackground);
 
   const onLinkClicked = () => {
-    const audio = new Audio("/audio/click.wav");
+    const audio = new Audio('/audio/click.wav');
     audio.play();
   };
   return (
@@ -38,9 +38,9 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
       data-testid="navbar"
       sx={sx.container}
       color={color}
-      background={isScroll ? bg : "transparent"}
+      background={isScroll ? bg : 'transparent'}
     >
-      <HStack sx={sx.wrap} spacing={{ base: "5", lg: "10" }}>
+      <HStack sx={sx.wrap} spacing={{ base: '5', lg: '10' }}>
         <Link
           onClick={onLinkClicked}
           href="/"
@@ -90,11 +90,16 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
       <Flex alignItems="center">
         {featureDownloadCvValue && <DownloadCV />}
         {featureDarkModeValue && (
-          <IconButton onClick={toggleColorMode} bg="transparent">
-            {colorMode === "light" ? (
-              <MdOutlineDarkMode />
+          <IconButton
+            data-testid="toggle-mode"
+            onClick={toggleColorMode}
+            bg="transparent"
+            aria-label="dark-mode"
+          >
+            {colorMode === 'light' ? (
+              <MdOutlineDarkMode data-testid="light" />
             ) : (
-              <MdOutlineLightMode />
+              <MdOutlineLightMode data-testid="dark" />
             )}
           </IconButton>
         )}

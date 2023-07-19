@@ -8,14 +8,14 @@ import {
   Text,
   UnorderedList,
   useColorModeValue,
-} from "@chakra-ui/react";
-import React from "react";
+} from '@chakra-ui/react';
+import React from 'react';
 
-import experience from "../../Service/experience.json";
+import experience from '../../Service/experience.json';
 
 const Experience = () => {
-  const bg = useColorModeValue("#eeeeee", "gray.800");
-  const color = useColorModeValue("gray.800", "gray.200");
+  const bg = useColorModeValue('#eeeeee', 'gray.800');
+  const color = useColorModeValue('gray.800', 'gray.200');
   return (
     <Stack
       as="section"
@@ -23,8 +23,8 @@ const Experience = () => {
       bg={bg}
       color={color}
       spacing={2}
-      px={{ base: "1rem", lg: "10rem" }}
-      py={{ base: "2rem", lg: "7rem" }}
+      px={{ base: '1rem', lg: '10rem' }}
+      py={{ base: '2rem', lg: '7rem' }}
       id="experience"
       data-testid="experience-section"
       zIndex={2}
@@ -40,7 +40,7 @@ const Experience = () => {
         {experience.map((item, index) => (
           <Flex
             key={index}
-            flexDir={{ base: "column", lg: "row" }}
+            flexDir={{ base: 'column', lg: 'row' }}
             width="100%"
             borderRadius="20px"
             data-aos="fade-up"
@@ -57,8 +57,13 @@ const Experience = () => {
                 <Heading size="sm">Technology Used</Heading>
                 <HStack spacing={3} py={2}>
                   {item.technology_used.map((item, idx) => (
-                    <Flex key={idx} alignItems="center">
-                      <Image src={item.logo} alt={item.label} h={5} />
+                    <Flex key={idx} h={5} alignItems="center">
+                      <Image
+                        src={item.logo}
+                        alt={item.label}
+                        width="100%"
+                        height="100%"
+                      />
                     </Flex>
                   ))}
                 </HStack>
