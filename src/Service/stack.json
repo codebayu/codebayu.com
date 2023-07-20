@@ -1,88 +1,87 @@
 [
-    {
-        "logo" : "./stack/logo512.webp",
-        "label" : "React Js",
-        "labelColor" : "#61dafb"
-    },
-    {
-        "logo" : "./stack/Nextjs-logo.svg",
-        "label" : "Next Js",
-        "labelColor" : "#000"
-    },
-    {
-        "logo" : "./stack/vue.webp",
-        "label" : "Vue Js",
-        "labelColor" : "#3fb984"
-    },
-    {
-        "logo" : "./stack/nuxt.webp",
-        "label" : "Nuxt Js",
-        "labelColor" : "#000"
-    },
-    {
-        "logo" : "./stack/jest.webp",
-        "label" : "Jest",
-        "labelColor" : "#c63d14"
-    },
-    {
-        "logo" : "./stack/ExpressJS.webp",
-        "label" : "Express Js",
-        "labelColor" : "#000"
-    },
-    {
-        "logo" : "./stack/redux.webp",
-        "label" : "Redux",
-        "labelColor" : "#764abc"
-    },
-    {
-        "logo" : "./stack/react-query.webp",
-        "label" : "React Query",
-        "labelColor" : "#ff4253"
-    },
-    {
-        "logo" : "./stack/firebase.svg",
-        "label" : "Firebase",
-        "labelColor" : "#fcca3f"
-    },
-    {
-        "logo" : "./stack/tailwind.webp",
-        "label" : "Tailwind CSS",
-        "labelColor" : "#01b7d6"
-    },
-    {
-        "logo" : "./stack/chakra.webp",
-        "label" : "Chakra UI",
-        "labelColor" : "#45c6c0"
-    },
-    {
-        "logo" : "./stack/logo-mui.webp",
-        "label" : "Material UI",
-        "labelColor" : "#027FFF"
-    },
-    {
-        "logo" : "./stack/bootstrap.webp",
-        "label" : "Bootstrap",
-        "labelColor" : "#7709f6"
-    },
-    {
-        "logo" : "./stack/javascript.webp",
-        "label" : "JavaScript",
-        "labelColor" : "#000"
-    },
-    {
-        "logo" : "./stack/typescript.webp",
-        "label" : "TypeScript",
-        "labelColor" : "#2E78C7"
-    },
-    {
-        "logo" : "./stack/html.webp",
-        "label" : "HTML5",
-        "labelColor" : "#fc490b"
-    },
-    {
-        "logo" : "./stack/css.webp",
-        "label" : "CSS3",
-        "labelColor" : "#214ce5"
-    }
-    
+  {
+    "logo": "./stack/logo512.webp",
+    "label": "React Js",
+    "labelColor": "#61dafb"
+  },
+  {
+    "logo": "./stack/Nextjs-logo.png",
+    "label": "Next Js",
+    "labelColor": "#000"
+  },
+  {
+    "logo": "./stack/vue.webp",
+    "label": "Vue Js",
+    "labelColor": "#3fb984"
+  },
+  {
+    "logo": "./stack/nuxt.webp",
+    "label": "Nuxt Js",
+    "labelColor": "#000"
+  },
+  {
+    "logo": "./stack/jest.webp",
+    "label": "Jest",
+    "labelColor": "#c63d14"
+  },
+  {
+    "logo": "./stack/ExpressJS.webp",
+    "label": "Express Js",
+    "labelColor": "#000"
+  },
+  {
+    "logo": "./stack/redux.webp",
+    "label": "Redux",
+    "labelColor": "#764abc"
+  },
+  {
+    "logo": "./stack/react-query.webp",
+    "label": "React Query",
+    "labelColor": "#ff4253"
+  },
+  {
+    "logo": "./stack/firebase.svg",
+    "label": "Firebase",
+    "labelColor": "#fcca3f"
+  },
+  {
+    "logo": "./stack/tailwind.webp",
+    "label": "Tailwind CSS",
+    "labelColor": "#01b7d6"
+  },
+  {
+    "logo": "./stack/chakra.webp",
+    "label": "Chakra UI",
+    "labelColor": "#45c6c0"
+  },
+  {
+    "logo": "./stack/logo-mui.webp",
+    "label": "Material UI",
+    "labelColor": "#027FFF"
+  },
+  {
+    "logo": "./stack/bootstrap.webp",
+    "label": "Bootstrap",
+    "labelColor": "#7709f6"
+  },
+  {
+    "logo": "./stack/javascript.webp",
+    "label": "JavaScript",
+    "labelColor": "#000"
+  },
+  {
+    "logo": "./stack/typescript.webp",
+    "label": "TypeScript",
+    "labelColor": "#2E78C7"
+  },
+  {
+    "logo": "./stack/html.webp",
+    "label": "HTML5",
+    "labelColor": "#fc490b"
+  },
+  {
+    "logo": "./stack/css.webp",
+    "label": "CSS3",
+    "labelColor": "#214ce5"
+  }
 ]

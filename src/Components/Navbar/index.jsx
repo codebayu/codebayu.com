@@ -1,6 +1,4 @@
-import { Link } from 'react-scroll';
 import {
-  Text,
   HStack,
   useColorMode,
   Flex,
@@ -11,6 +9,7 @@ import DownloadCV from '../DownloadCV';
 import { navbarStyles as sx } from './Navbar.styles';
 import { useState } from 'react';
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
   const [isScroll, setIsScroll] = useState(false);
@@ -18,6 +17,14 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
 
   const bg = useColorModeValue('white', 'gray.800');
   const color = useColorModeValue('gray.800', 'gray.100');
+
+  const navLink = [
+    { label: 'Home', path: '/' },
+    { label: 'Experience', path: '/experience' },
+    { label: 'Projects', path: '/projects' },
+    { label: 'Tech Stack', path: '/stacks' },
+    { label: 'Info', path: '/info' },
+  ];
 
   const changeBackground = () => {
     if (window.scrollY >= 20) {
@@ -29,10 +36,6 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
 
   window.addEventListener('scroll', changeBackground);
 
-  const onLinkClicked = () => {
-    const audio = new Audio('/audio/click.wav');
-    audio.play();
-  };
   return (
     <HStack
       data-testid="navbar"
@@ -41,50 +44,11 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
       background={isScroll ? bg : 'transparent'}
     >
       <HStack sx={sx.wrap} spacing={{ base: '5', lg: '10' }}>
-        <Link
-          onClick={onLinkClicked}
-          href="/"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <Text sx={sx.link}>Home</Text>
-        </Link>
-        <Link
-          onClick={onLinkClicked}
-          to="experience"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          href="/"
-        >
-          <Text sx={sx.link}>Experience</Text>
-        </Link>
-        <Link
-          onClick={onLinkClicked}
-          href="/"
-          to="mystack"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <Text sx={sx.link}>Tech Stack</Text>
-        </Link>
-        <Link
-          onClick={onLinkClicked}
-          href="/"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <Text sx={sx.link}>Projects</Text>
-        </Link>
+        {navLink.map((link) => (
+          <Link to={link.path} key={link.path}>
+            {link.label}
+          </Link>
+        ))}
       </HStack>
 
       <Flex alignItems="center">

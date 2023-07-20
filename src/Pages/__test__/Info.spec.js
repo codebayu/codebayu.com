@@ -1,4 +1,4 @@
-import { render, screen } from '../../../setupTests';
+import { render, screen } from '../../setupTests';
 import { Info } from '../Info';
 
 describe('Info component', () => {

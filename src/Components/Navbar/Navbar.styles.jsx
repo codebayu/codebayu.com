@@ -1,22 +1,22 @@
 export const navbarStyles = {
   container: {
-    position: "fixed",
+    position: 'fixed',
     top: 0,
-    justifyContent: "space-between",
-    display: "flex",
+    justifyContent: 'space-between',
+    display: 'flex',
     zIndex: 30,
-    width: "100%",
-    px: { base: "1rem", lg: "10rem" },
-    transition: "background-color 0.5s ease;",
+    width: '100%',
+    px: { base: '1rem', lg: '10rem' },
+    transition: 'background-color 0.5s ease;',
   },
   wrap: {
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: { base: 12, lg: 16 },
     p: 5,
-    display: { base: "none", lg: "flex" },
+    display: { base: 'none', lg: 'flex' },
   },
   link: {
-    _hover: { color: "#3f4479" },
-    cursor: "pointer",
+    _hover: { color: '#3f4479' },
+    cursor: 'pointer',
   },
 };

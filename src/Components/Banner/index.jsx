@@ -67,12 +67,14 @@ const Banner = () => {
   return (
     <Flex sx={sx.container} bg={bg} color={color} data-testid="banner">
       <Flex sx={sx.wrap}>
-        <Heading sx={sx.greet}>Hi! I am,</Heading>
-        <Flex sx={sx.wrapBio}>
+        <Heading sx={sx.greet} data-aos="fade-right">
+          Hi! I am,
+        </Heading>
+        <Flex sx={sx.wrapBio} data-aos="zoom-in">
           <Heading sx={sx.name}>Bayu Setiawan</Heading>
           <Text sx={sx.job}>Frontend Developer</Text>
           <Text sx={sx.summary}>
-            As a front-end developer, I specialize in building elegant and
+            As a frontend developer, I specialize in building elegant and
             high-performing web applications using TypeScript and popular
             frameworks like Next JS and Nuxt JS. With my technical skills, I
             create solutions that are easy to maintain and scale, always
@@ -96,7 +98,6 @@ const Banner = () => {
         <Image
           src="./bayu-no-bg.webp"
           width="100%"
-          height="100%"
           alt="my image"
           filter={filter}
           loading="eager"
