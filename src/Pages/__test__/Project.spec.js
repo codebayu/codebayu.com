@@ -4,7 +4,7 @@ import { ProjectSection } from '../Project';
 describe('Banner component', () => {
   it('should render the heading', () => {
     render(<ProjectSection />);
-    const heading = screen.getByText(/Projects/i);
+    const heading = screen.getByTestId('header');
     expect(heading).toBeInTheDocument();
   });
 

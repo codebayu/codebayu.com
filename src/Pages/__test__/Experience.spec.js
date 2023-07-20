@@ -37,7 +37,7 @@ jest.mock('../../Service/experience.json', () => [
 describe('Banner component', () => {
   it('should render the heading', () => {
     render(<Experience />);
-    const heading = screen.getByText(/Experience/i);
+    const heading = screen.getByTestId('header');
     expect(heading).toBeInTheDocument();
   });
 

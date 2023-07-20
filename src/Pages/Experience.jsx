@@ -30,7 +30,7 @@ export const Experience = () => {
       zIndex={2}
       position="relative"
     >
-      <HStack data-aos="fade-down">
+      <HStack data-aos="fade-down" data-testid="header">
         <FaGrav size={30} />
         <Heading fontSize={{ base: 20, lg: 30 }}>Experience</Heading>
       </HStack>
