@@ -34,7 +34,7 @@ export const Experience = () => {
         <FaGrav size={30} />
         <Heading fontSize={{ base: 20, lg: 30 }}>Experience</Heading>
       </HStack>
-      <Text data-aos="fade-down">My proffesional career journey.</Text>
+      <Text data-aos="fade-down">List of my proffesional experiences</Text>
       <Flex flexDir="column" pt={5} gap={5}>
         {experience.map((item, index) => (
           <Flex

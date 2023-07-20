@@ -22,10 +22,7 @@ export const ProjectSection = () => {
         <FaBrain size={30} />
         <Heading fontSize={{ base: 20, lg: 30 }}>Projects</Heading>
       </HStack>
-      <Text data-aos="fade-down">
-        Showcasing my passion for technology, design, and problem-solving
-        through code.
-      </Text>
+      <Text data-aos="fade-down">List of my projects</Text>
       <Stack spacing={10} position="relative">
         {projects.map((project, index) => (
           <Project key={index} project={project} />

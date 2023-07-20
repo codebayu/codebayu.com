@@ -34,7 +34,7 @@ export default function Project({ project }) {
           <Link
             href={project.demo}
             target="_blank"
-            background="gray.800"
+            background="gray.700"
             rounded="lg"
             width="min-content"
             paddingY={1}
