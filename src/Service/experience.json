@@ -30,8 +30,10 @@
         "labelColor": "#2E78C7"
       }
     ],
-    "projects": ["E-Paper, Subscription, Checkout Page"],
-    "project_note": "Frontend and Backend Integration",
+    "projects": [
+      "I create new feature and maintain platform E-Paper, Subscription, Checkout Page",
+      "Research and implementation feature flag using ConfigCat"
+    ],
     "image": "./logo/logo_Alteacare.svg"
   },
   {
@@ -45,7 +47,7 @@
         "labelColor": "#61dafb"
       },
       {
-        "logo": "./stack/Nextjs-logo.svg",
+        "logo": "./stack/Nextjs-logo.png",
         "label": "Next Js",
         "labelColor": "#000"
       },
@@ -60,8 +62,10 @@
         "labelColor": "#2E78C7"
       }
     ],
-    "projects": ["E-Pharmacy (Pharmacy Marketplace)"],
-    "project_note": "Frontend and Backend Integration",
+    "projects": [
+      "I developed the EPharmacy Desktop Platform from scratch to release.",
+      "I also created new features for other applications such as O2O(offline to online) Doctor Consultation, EPharmacy Dashboard, and Operational Dashboard."
+    ],
     "image": "./logo/logo_Alteacare.svg"
   },
   {
@@ -91,11 +95,10 @@
       }
     ],
     "projects": [
-      "Academy (Learning Management System)",
-      "Smart Wizard (Web3/ Blockchain Network)",
-      "Projeq.id (Website for integrating application from finance, accounting, human resourse, and general affair"
+      "I developed serverless web applications using Google Cloud services",
+      "I collaborated with the team to understand project requirements and delivered efficient solutions that exceeded client expectations",
+      "I created platform projeq.id"
     ],
-    "project_note": "Frontend, UI/UX Designer, Backend Integration, Cloud Services",
     "image": "./logo/importir.webp"
   },
   {
@@ -124,7 +127,10 @@
         "labelColor": "#45c6c0"
       }
     ],
-    "project_note": "Client site website, deploy one website for a week using firebase and setting DNS on rumahweb",
+    "projects": [
+      "I received comprehensive training in various areas including mentorship,  project management, product development, and programming skills",
+      "I assisted with daily tasks, attended meetings, and worked on special projects to gain exposure"
+    ],
     "image": "./logo/importir.webp"
   }
 ]

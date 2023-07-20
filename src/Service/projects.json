@@ -1,52 +1,26 @@
 [
-    {
-        "title": "CSS Library | by-ui",
-        "description": "This is open source css library which is published on npmjs. So, you can install it to your project. Documentation: https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart",
-        "technology_used": "SASS, gulp, gulp-purgecss",
-        "repository": "https://github.com/Bayusetiawan45/by-ui",
-        "preview_image": [
-            "./project/by-ui/by-ui.webp",
-            "./project/by-ui/npmjs.webp"
-        ]
-    },
-    {
-        "title": "Otodidoc.",
-        "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
-        "technology_used": "React, Chakra UI, Firebase",
-        "repository": "https://github.com/Bayusetiawan45/academy",
-        "preview_image": [
-            "./project/otodidoc/1.webp",
-            "./project/otodidoc/2.webp",
-            "./project/otodidoc/3.webp",
-            "./project/otodidoc/4.webp",
-            "./project/otodidoc/5.webp"
-        ]
-    },
-    {
-        "title": "Shopping Cart",
-        "description": "This is e-commerce full-stack web application",
-        "technology_used": "React, TypeScript, Material UI, Express JS, JWT, and MongoDB",
-        "repository": "https://github.com/Bayusetiawan45/shopping-cart",
-        "preview_image": [
-            "./project/shopping/1.webp",
-            "./project/shopping/2.webp",
-            "./project/shopping/3.webp",
-            "./project/shopping/4.webp"
-        ]
-    },
-    {
-        "title": "Entrepreneurs Academy",
-        "description": "Entrepreneurs Academy is Iearning Management System (LMS) website built on an Api-to-Api system on the appgregator.co and edutama.id platform.",
-        "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore,  Firebase Authentication, and Backend integration using Axios",
-        "repository": "Importir.org (Office) Repository",
-        "preview_image": [
-            "./project/academy/home.webp",
-            "./project/academy/academydetail.webp",
-            "./project/academy/crudacademy.webp",
-            "./project/academy/crudpackage.webp",
-            "./project/academy/auth.webp",
-            "./project/academy/integratexendit.webp",
-            "./project/academy/myacademy.webp"
-        ]
-    }
+  {
+    "title": "CSS Library | by-ui",
+    "description": "This is open source css library which is published on npmjs. So, you can install it to your project. Documentation: https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart",
+    "technology_used": "SASS, gulp, gulp-purgecss",
+    "repository": "https://github.com/Bayusetiawan45/by-ui",
+    "preview_image": "./project/by-ui/npmjs.webp",
+    "demo": "https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart"
+  },
+  {
+    "title": "Otodidoc.",
+    "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
+    "technology_used": "React, Chakra UI, Firebase",
+    "repository": "https://github.com/Bayusetiawan45/academy",
+    "preview_image": "./project/otodidoc/1.webp",
+    "demo": "https://academy-73710.web.app/"
+  },
+  {
+    "title": "Entrepreneurs Academy",
+    "description": "Entrepreneurs Academy is Iearning Management System (LMS) website built on an Api-to-Api system on the appgregator.co and edutama.id platform.",
+    "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore, and  Firebase Authentication",
+    "repository": "Importir.org (Office) Repository",
+    "preview_image": "./project/academy/crudacademy.webp",
+    "demo": ""
+  }
 ]

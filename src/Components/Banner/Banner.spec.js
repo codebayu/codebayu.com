@@ -2,22 +2,21 @@ import { render, screen } from '../../setupTests';
 import Banner from '.';
 
 describe('Banner component', () => {
-  
   it('should render the heading', () => {
-    render(<Banner />)
+    render(<Banner />);
     const heading = screen.getByText(/Hi! I am,/i);
     expect(heading).toBeInTheDocument();
   });
 
   it('should render the name', () => {
-    render(<Banner />)
+    render(<Banner />);
     const name = screen.getByText(/Bayu Setiawan/i);
-    expect(name).toBeInTheDocument()
+    expect(name).toBeInTheDocument();
   });
 
   it('should render the description', () => {
-    render(<Banner />)
-    const description = screen.getByText(/As a front-end developer,/i);
+    render(<Banner />);
+    const description = screen.getByText(/As a frontend developer,/i);
     expect(description).toBeInTheDocument();
   });
 

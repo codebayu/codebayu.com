@@ -4,25 +4,32 @@ export const projectStyles = {
     alignItems: { base: 'center', lg: 'start' },
     justifyContent: 'start',
     width: '100%',
-    padding: '1rem',
+    height: { base: '100%', lg: '15rem' },
     zIndex: 10,
+    rounded: '10px',
+    overflow: 'hidden',
+    shadow: 'md',
   },
   slider: {
-    rounded: "xl",
-    mb: { base: 8, lg: 0 },
-    marginRight: { base: 0, lg: 10 },
+    background: 'red',
+    flex: 1,
   },
   wrap: {
-    textAlign: "start",
-    flexDir: "column",
+    textAlign: 'start',
+    flexDir: 'column',
+    flex: 1,
+    padding: 3,
+    marginTop: { base: 5, lg: 0 },
   },
   title: {
-    size: "sm",
-    fontWeight: "bold"
+    fontSize: 15,
+    fontWeight: 'semibold',
   },
   projectTitle: {
-    size: "lg",
-    fontWeight: "bold",
-    mb: 5
-  }
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  text: {
+    fontSize: 13,
+  },
 };

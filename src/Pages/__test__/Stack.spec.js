@@ -1,8 +1,8 @@
-import { render, screen } from '../../../setupTests';
-import Stacks from '../Stack';
-import stack from '../../../Service/stack.json';
+import { render, screen } from '../../setupTests';
+import { Stacks } from '../Stack';
+import stack from '../../Service/stack.json';
 
-jest.mock('../../../Service/stack.json', () => [
+jest.mock('../../Service/stack.json', () => [
   {
     logo: './stack/logo512.png',
     label: 'React Js',
@@ -21,7 +21,7 @@ describe('Banner component', () => {
     render(<Stacks />);
     stack.forEach((item) => {
       expect(screen.getByText(item.label)).toBeInTheDocument();
-      
+
       const img = screen.getByRole('img');
       expect(img).toBeInTheDocument();
       expect(img).toHaveAttribute('src', item.logo);

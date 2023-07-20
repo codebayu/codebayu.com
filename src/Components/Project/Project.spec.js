@@ -10,10 +10,10 @@ describe('Stack Component', () => {
     preview_image: ['https://bit.ly/dan-abramov'],
   };
 
-  it('should render the slider', () => {
+  it('should render the image', () => {
     render(<Project project={props} />);
-    const slider = screen.getByTestId('slider');
-    expect(slider).toBeInTheDocument();
+    const image = screen.getByTestId('image');
+    expect(image).toBeInTheDocument();
   });
 
   it('should render project information', () => {

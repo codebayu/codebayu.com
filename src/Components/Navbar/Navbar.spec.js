@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '../../setupTests';
+import { render, screen } from '../../setupTests';
 import { Navbar } from '.';
 
 describe('Framer Motion component', () => {

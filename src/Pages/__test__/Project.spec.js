@@ -1,11 +1,10 @@
-import { render, screen } from '../../../setupTests';
-import ProjectSection from '../Project';
+import { render, screen } from '../../setupTests';
+import { ProjectSection } from '../Project';
 
 describe('Banner component', () => {
-  
   it('should render the heading', () => {
-    render(<ProjectSection />)
-    const heading = screen.getByText(/Projects/i);
+    render(<ProjectSection />);
+    const heading = screen.getByTestId('header');
     expect(heading).toBeInTheDocument();
   });
 

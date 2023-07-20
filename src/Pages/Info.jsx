@@ -1,5 +1,12 @@
-import { Flex, Heading, Text, useColorModeValue } from '@chakra-ui/react';
+import {
+  Flex,
+  HStack,
+  Heading,
+  Text,
+  useColorModeValue,
+} from '@chakra-ui/react';
 import React from 'react';
+import { FaInfoCircle } from 'react-icons/fa';
 
 const Highlight = ({ label }) => {
   const highlight = useColorModeValue('#000', 'gold');
@@ -7,25 +14,26 @@ const Highlight = ({ label }) => {
 };
 
 export const Info = () => {
-  const bg = useColorModeValue('gray.100', 'gray.900');
-  const color = useColorModeValue('gray.800', 'gray.200');
-
   return (
     <Flex
       as="section"
-      bg={bg}
-      color={color}
       id="maps"
-      minH="100%"
+      minH="100vh"
       px={{ base: '1rem', lg: '10rem' }}
-      py={{ base: '2rem', lg: '7rem' }}
+      py={{ base: '3rem', lg: '7rem' }}
       flexDir="column"
       gap={5}
     >
-      <Heading fontSize={{ base: 20, lg: 45 }} fontWeight="semibold">
-        How i built this website?
-      </Heading>
-      <Text data-testid="info-description" fontSize={{ base: 12, lg: 18 }}>
+      <HStack data-aos="fade-down">
+        <FaInfoCircle size={30} />
+        <Heading fontSize={{ base: 20, lg: 30 }}>Information</Heading>
+      </HStack>
+      <Text data-aos="fade-down">How i built this website?</Text>
+      <Text
+        data-aos="fade-up"
+        data-testid="info-description"
+        fontSize={{ base: 12, lg: 18 }}
+      >
         Welcome to my portfolio website, a digital masterpiece meticulously
         crafted using cutting-edge technologies and a passion for innovation.
         Built on the foundation of <Highlight label="React.js" /> and powered by

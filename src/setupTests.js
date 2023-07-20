@@ -2,6 +2,7 @@ import '@testing-library/jest-dom';
 import { ThemeProvider, extendTheme } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
 import { ConfigCatProvider } from 'configcat-react';
+import { BrowserRouter } from 'react-router-dom';
 
 const theme = extendTheme({});
 
@@ -11,11 +12,6 @@ jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom'),
   useNavigate: () => jest.fn(),
   useLocation: () => jest.fn(),
-}));
-
-jest.mock('react-ga', () => ({
-  event: jest.fn(),
-  initialize: () => jest.fn(),
 }));
 
 window.matchMedia =
@@ -31,7 +27,11 @@ window.matchMedia =
 const Providers = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <ConfigCatProvider sdkKey='9H3bCOyAakyOiOKFmVUMtg/QBwHDDPTfECRcCGIg4JTOw'>{children}</ConfigCatProvider>
+      <BrowserRouter>
+        <ConfigCatProvider sdkKey="9H3bCOyAakyOiOKFmVUMtg/QBwHDDPTfECRcCGIg4JTOw">
+          {children}
+        </ConfigCatProvider>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };
