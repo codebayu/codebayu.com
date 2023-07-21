@@ -20,7 +20,7 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
   const [openDrawer, setOpenDrawer] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
 
-  const bg = useColorModeValue('white', 'gray.800');
+  const bg = useColorModeValue('white', 'gray.900');
   const color = useColorModeValue('gray.800', 'gray.100');
 
   const navLink = [

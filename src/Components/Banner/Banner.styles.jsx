@@ -28,6 +28,7 @@ export const bannerStyles = {
   },
   name: {
     fontSize: { base: 30, lg: 60 },
+    fontFamily: 'Sora',
   },
   job: {
     fontSize: { base: 16, lg: 20 },

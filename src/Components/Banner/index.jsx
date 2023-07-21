@@ -95,13 +95,16 @@ const Banner = () => {
         </HStack>
       </Flex>
       <Box sx={sx.wrapImage} bgGradient={bgGradient}>
-        <Image
-          src="./bayu-no-bg.webp"
-          width="100%"
-          alt="my image"
-          filter={filter}
-          loading="eager"
-        />
+        <Box>
+          <Image
+            src="./bayu-no-bg.webp"
+            width="100%"
+            height="100%"
+            alt="my image"
+            filter={filter}
+            loading="eager"
+          />
+        </Box>
         <Box sx={sx.buble} bg={bgBuble} />
       </Box>
     </Flex>
