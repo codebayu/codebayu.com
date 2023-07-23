@@ -15,6 +15,7 @@ import {
   FaWhatsapp,
   FaEnvelope,
   FaBook,
+  FaDiscord,
 } from 'react-icons/fa';
 import { Icon } from '../Icon';
 import { bannerStyles as sx } from './Banner.styles';
@@ -50,6 +51,11 @@ const Banner = () => {
       label: 'Documentation',
       link: 'https://doc.codebayu.com/',
       icon: <FaBook />,
+    },
+    {
+      label: 'Discord',
+      link: 'https://discord.gg/76UFeGdXy6',
+      icon: <FaDiscord />,
     },
   ];
   const bg = useColorModeValue('#eeeeee', 'gray.800');
