@@ -16,6 +16,7 @@ import { Experience } from './Pages/Experience';
 import { ProjectSection } from './Pages/Project';
 import { Stacks } from './Pages/Stack';
 import { Info } from './Pages/Info';
+import { NotFound } from './Pages/NotFound';
 
 function App() {
   useAos();
@@ -54,6 +55,7 @@ function App() {
         <Route path="/projects" element={<ProjectSection />} />
         <Route path="/stacks" element={<Stacks />} />
         <Route path="/info" element={<Info />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>
