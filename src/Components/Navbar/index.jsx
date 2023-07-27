@@ -15,7 +15,7 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { IoMdClose } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
-export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
+export const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
   const [openDrawer, setOpenDrawer] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
@@ -60,21 +60,19 @@ export const Navbar = ({ featureDarkModeValue, featureDownloadCvValue }) => {
         </HStack>
 
         <Flex alignItems="center">
-          {featureDownloadCvValue && <DownloadCV />}
-          {featureDarkModeValue && (
-            <IconButton
-              data-testid="toggle-mode"
-              onClick={toggleColorMode}
-              bg="transparent"
-              aria-label="dark-mode"
-            >
-              {colorMode === 'light' ? (
-                <MdOutlineDarkMode data-testid="light" />
-              ) : (
-                <MdOutlineLightMode data-testid="dark" />
-              )}
-            </IconButton>
-          )}
+          <DownloadCV />
+          <IconButton
+            data-testid="toggle-mode"
+            onClick={toggleColorMode}
+            bg="transparent"
+            aria-label="dark-mode"
+          >
+            {colorMode === 'light' ? (
+              <MdOutlineDarkMode data-testid="light" />
+            ) : (
+              <MdOutlineLightMode data-testid="dark" />
+            )}
+          </IconButton>
         </Flex>
         <Box
           cursor="pointer"

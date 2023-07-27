@@ -1,7 +1,6 @@
 import '@testing-library/jest-dom';
 import { ThemeProvider, extendTheme } from '@chakra-ui/react';
 import { render } from '@testing-library/react';
-import { ConfigCatProvider } from 'configcat-react';
 import { BrowserRouter } from 'react-router-dom';
 
 const theme = extendTheme({});
@@ -27,11 +26,7 @@ window.matchMedia =
 const Providers = ({ children }) => {
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <ConfigCatProvider sdkKey="9H3bCOyAakyOiOKFmVUMtg/QBwHDDPTfECRcCGIg4JTOw">
-          {children}
-        </ConfigCatProvider>
-      </BrowserRouter>
+      <BrowserRouter>{children}</BrowserRouter>
     </ThemeProvider>
   );
 };
