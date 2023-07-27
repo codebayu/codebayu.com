@@ -11,7 +11,6 @@ export const projectStyles = {
     shadow: 'md',
   },
   slider: {
-    background: 'red',
     flex: 1,
   },
   wrap: {
