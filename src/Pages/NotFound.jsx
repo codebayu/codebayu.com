@@ -10,14 +10,14 @@ export const NotFound = () => {
       as="section"
       height={{ base: '100%', lg: '100vh' }}
       px={{ base: '1rem', lg: '10rem' }}
-      id="home"
+      id="not-found"
       py={{ base: '3rem', lg: '5rem' }}
       flexDir="column"
       alignItems="center"
       justifyContent="center"
       gap={5}
     >
-      <FcDisclaimer style={{ width: 80, height: 80 }} />
+      <FcDisclaimer data-testid="icon" style={{ width: 80, height: 80 }} />
       <Heading as="h1" color={color}>
         Ooups, page not found
       </Heading>
@@ -30,7 +30,9 @@ export const NotFound = () => {
         We are very sorry for the inconvenience. Its look like you've trying to
         access a page that has been deleted or never even exist
       </Text>
-      <Link to="/">Back to Homepage</Link>
+      <Link to="/" data-testid="cta">
+        Back to Homepage
+      </Link>
     </Flex>
   );
 };
