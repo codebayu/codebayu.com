@@ -17,10 +17,15 @@ export const Overview = ({ label, value, unit = '' }) => {
       w="100%"
       pt={2}
     >
-      <Text textTransform="capitalize" color={textColor}>
+      <Text data-testid="label" textTransform="capitalize" color={textColor}>
         {label}
       </Text>
-      <Text color={valueColor} fontSize="3xl" fontWeight="semibold">
+      <Text
+        data-testid="value"
+        color={valueColor}
+        fontSize="3xl"
+        fontWeight="semibold"
+      >
         {value}{' '}
         <Text as="span" color={textColor} fontSize="md" fontWeight="normal">
           {unit}

@@ -55,7 +55,7 @@ export const Calendar = ({ data }) => {
           </ListItem>
         ))}
       </List>
-      <Flex justifyContent="start" gap="3px">
+      <Flex justifyContent="start" gap="3px" data-testid="contribution">
         {weeks?.map((week) => (
           <Box key={week.firstDay}>
             {week.contributionDays?.map((contribution) => {
@@ -87,15 +87,15 @@ export const Calendar = ({ data }) => {
           </Box>
         ))}
       </Flex>
-      <HStack justifyContent="space-between" mt={2}>
+      <HStack data-testid="less-more" justifyContent="space-between" mt={2}>
         <Flex flexWrap="wrap" alignItems="center" gap={2} fontSize="sm">
-          <Text>Less</Text>
+          <Text data-testid="less">Less</Text>
           <Flex gap={1}>
             {contributionColors?.map((item) => (
               <Box key={item} h={4} w={4} background={item} borderRadius="sm" />
             ))}
           </Flex>
-          <Text>More</Text>
+          <Text data-testid="more">More</Text>
         </Flex>
         <Box opacity={selectContribution?.date ? '100' : '0'}>
           {selectContribution?.count} contributions on{' '}
