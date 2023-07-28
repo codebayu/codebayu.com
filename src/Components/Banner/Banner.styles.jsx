@@ -2,7 +2,7 @@ export const bannerStyles = {
   container: {
     width: '100%',
     borderRadius: '25px',
-    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 20px 35px',
+    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 10px 25px',
     overflow: 'hidden',
     marginTop: 30,
     zIndex: 1,

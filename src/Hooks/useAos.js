@@ -3,6 +3,9 @@ import Aos from 'aos';
 
 export function useAos() {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      duration: 600,
+      delay: 50,
+    });
   }, []);
 }

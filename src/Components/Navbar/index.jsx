@@ -44,7 +44,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <>
+    <nav>
       <HStack
         data-testid="navbar"
         sx={sx.container}
@@ -103,6 +103,6 @@ export const Navbar = () => {
           </Stack>
         </Flex>
       )}
-    </>
+    </nav>
   );
 };

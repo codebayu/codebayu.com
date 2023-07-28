@@ -73,10 +73,10 @@ const Banner = () => {
   return (
     <Flex sx={sx.container} bg={bg} color={color} data-testid="banner">
       <Flex sx={sx.wrap}>
-        <Heading sx={sx.greet} data-aos="fade-right">
+        <Heading sx={sx.greet} data-aos="fade-up">
           Hi! I am,
         </Heading>
-        <Flex sx={sx.wrapBio} data-aos="zoom-in">
+        <Flex sx={sx.wrapBio} data-aos="fade-up">
           <Heading sx={sx.name}>Bayu Setiawan</Heading>
           <Text sx={sx.job}>Frontend Developer</Text>
           <Text sx={sx.summary}>

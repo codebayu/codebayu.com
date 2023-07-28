@@ -19,6 +19,7 @@ export default function Project({ project }) {
       <Flex sx={sx.slider}>
         <Image
           src={project.preview_image}
+          alt="projects"
           objectFit="cover"
           height="100%"
           w="100%"
