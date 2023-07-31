@@ -21,8 +21,7 @@ export default function Project({ project }) {
           src={project.preview_image}
           alt="projects"
           objectFit="cover"
-          height="100%"
-          w="100%"
+          style={{ width: '100%', height: 200, minWidth: '380px' }}
           data-testid="image"
         />
       </Flex>
@@ -53,10 +52,6 @@ export default function Project({ project }) {
         <Box>
           <Text sx={sx.title}>Technology Used</Text>
           <Text sx={sx.text}>{project.technology_used}</Text>
-        </Box>
-        <Box>
-          <Text sx={sx.title}>Repository</Text>
-          <Text sx={sx.text}>{project.repository}</Text>
         </Box>
       </Flex>
     </Flex>

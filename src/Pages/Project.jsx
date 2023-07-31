@@ -1,4 +1,4 @@
-import { HStack, Heading, Stack, Text } from '@chakra-ui/react';
+import { HStack, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 import Project from '../Components/Project';
 import { FaBrain } from 'react-icons/fa';
@@ -23,11 +23,11 @@ export const ProjectSection = () => {
         <Heading fontSize={{ base: 20, lg: 30 }}>Projects</Heading>
       </HStack>
       <Text data-aos="fade-down">List of my projects</Text>
-      <Stack spacing={10} position="relative">
+      <SimpleGrid minChildWidth="300px" spacing="20px">
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}
-      </Stack>
+      </SimpleGrid>
     </Stack>
   );
 };

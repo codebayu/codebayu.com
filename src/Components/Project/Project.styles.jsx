@@ -1,10 +1,10 @@
 export const projectStyles = {
   container: {
-    flexDir: { base: 'column', lg: 'row' },
+    flexDir: 'column',
     alignItems: { base: 'center', lg: 'start' },
     justifyContent: 'start',
     width: '100%',
-    height: { base: '100%', lg: '15rem' },
+    height: '100%',
     zIndex: 10,
     rounded: '10px',
     overflow: 'hidden',
@@ -19,6 +19,7 @@ export const projectStyles = {
     flex: 1,
     padding: 3,
     marginTop: { base: 5, lg: 0 },
+    w: '100%',
   },
   title: {
     fontSize: 15,

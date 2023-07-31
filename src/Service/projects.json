@@ -1,26 +1,30 @@
 [
   {
+    "title": "codebayu.com",
+    "description": "Personal website and portfolio",
+    "technology_used": "React Js and Chakra UI",
+    "preview_image": "./project/codebayu.webp",
+    "demo": "https://codebayu.com"
+  },
+  {
     "title": "CSS Library | by-ui",
-    "description": "This is open source css library which is published on npmjs. So, you can install it to your project. Documentation: https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart",
+    "description": "Open source css library which is published on npmjs",
     "technology_used": "SASS, gulp, gulp-purgecss",
-    "repository": "https://github.com/Bayusetiawan45/by-ui",
-    "preview_image": "./project/by-ui/npmjs.webp",
+    "preview_image": "./project/npmjs.webp",
     "demo": "https://bayu-setiawan.gitbook.io/by.ui/getting-started/quickstart"
   },
   {
     "title": "Otodidoc.",
-    "description": "This is a learning website where users can watch courses about programming. Built on React Js, Chakra UI, and Firebase. Demo: https://academy-73710.web.app/",
+    "description": "Learning website where users can watch courses about programming. Full authentication system",
     "technology_used": "React, Chakra UI, Firebase",
-    "repository": "https://github.com/Bayusetiawan45/academy",
-    "preview_image": "./project/otodidoc/1.webp",
+    "preview_image": "./project/1.webp",
     "demo": "https://academy-73710.web.app/"
   },
   {
-    "title": "Entrepreneurs Academy",
-    "description": "Entrepreneurs Academy is Iearning Management System (LMS) website built on an Api-to-Api system on the appgregator.co and edutama.id platform.",
-    "technology_used": "React JS, Chakra UI, Cloud Storage, Cloud Firestore, and  Firebase Authentication",
-    "repository": "Importir.org (Office) Repository",
-    "preview_image": "./project/academy/crudacademy.webp",
-    "demo": "https://codebayu.com"
+    "title": "Portfolio Template",
+    "description": "Open source personal website and portfolio template",
+    "technology_used": "React Js, Typescript, Tailwind CSS, and Framer Motion",
+    "preview_image": "./project/template.webp",
+    "demo": "https://codebayu.vercel.app"
   }
 ]
