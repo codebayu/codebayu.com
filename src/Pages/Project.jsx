@@ -23,7 +23,7 @@ export const ProjectSection = () => {
         <Heading fontSize={{ base: 20, lg: 30 }}>Projects</Heading>
       </HStack>
       <Text data-aos="fade-down">List of my projects</Text>
-      <SimpleGrid minChildWidth="300px" spacing="20px">
+      <SimpleGrid minChildWidth="300px" spacing="25px">
         {projects.map((project, index) => (
           <Project key={index} project={project} />
         ))}

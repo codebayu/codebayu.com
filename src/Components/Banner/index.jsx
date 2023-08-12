@@ -12,9 +12,7 @@ import {
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-  FaWhatsapp,
   FaEnvelope,
-  FaBook,
   FaDiscord,
 } from 'react-icons/fa';
 import { Icon } from '../Icon';
@@ -42,16 +40,6 @@ const Banner = () => {
       link: 'mailto:bayusetiawanipb@gmail.com',
       icon: <FaEnvelope />,
     },
-    // {
-    //   label: 'Whatsapp',
-    //   link: 'https://wa.me/+6282385696549',
-    //   icon: <FaWhatsapp />,
-    // },
-    // {
-    //   label: 'Documentation',
-    //   link: 'https://doc.codebayu.com/',
-    //   icon: <FaBook />,
-    // },
     {
       label: 'Discord',
       link: 'https://discord.gg/76UFeGdXy6',

@@ -7,6 +7,20 @@
     "demo": "https://codebayu.com"
   },
   {
+    "title": "Pomolite",
+    "description": "Fullstack application that implement pomodoro technique",
+    "technology_used": "Next JS, Tailwind CSS, Postgresql, Prisma, and Zustand",
+    "preview_image": "./project/pomolite.webp",
+    "demo": "https://pomolite.vercel.app/"
+  },
+  {
+    "title": "Pomolite Mobile",
+    "description": "Mobile application that implement pomodoro technique",
+    "technology_used": "React Native and Expo",
+    "preview_image": "./project/pomolite-mobile.webp",
+    "demo": "https://github.com/Bayusetiawan45/pomolite-mobile"
+  },
+  {
     "title": "CSS Library | by-ui",
     "description": "Open source css library which is published on npmjs",
     "technology_used": "SASS, gulp, gulp-purgecss",
