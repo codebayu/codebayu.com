@@ -26,7 +26,7 @@ export default function Project({ project }) {
   }, [project.preview_image]);
 
   return (
-    <Flex sx={sx.container} color={color}>
+    <Flex sx={sx.container} color={color} data-aos="fade-up">
       <Flex sx={sx.slider}>
         {!imageLoaded ? (
           <Blurhash
