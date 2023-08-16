@@ -94,9 +94,13 @@ export const Navbar = () => {
           display={{ base: 'flex', lg: 'none' }}
           mb={2}
         >
-          <Stack w="full" textAlign="center">
+          <Stack w="full" textAlign="center" pt={5}>
             {navLink.map((link) => (
-              <Link to={link.path} key={link.path}>
+              <Link
+                to={link.path}
+                key={link.path}
+                onClick={() => setOpenDrawer(false)}
+              >
                 {link.label}
               </Link>
             ))}

@@ -14,6 +14,7 @@ import {
   FaLinkedinIn,
   FaEnvelope,
   FaDiscord,
+  FaYoutube,
 } from 'react-icons/fa';
 import { Icon } from '../Icon';
 import { bannerStyles as sx } from './Banner.styles';
@@ -24,6 +25,11 @@ const Banner = () => {
       label: 'Github',
       link: 'https://github.com/Bayusetiawan45',
       icon: <FaGithub />,
+    },
+    {
+      label: 'Youtube',
+      link: 'https://www.youtube.com/@codebayu',
+      icon: <FaYoutube />,
     },
     {
       label: 'Instagram',
